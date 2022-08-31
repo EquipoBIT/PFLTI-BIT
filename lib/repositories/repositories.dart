@@ -1,0 +1,12 @@
+export 'auth/base_auth_repository.dart';
+export 'auth/auth_repository.dart';
+export 'ucurricular/base_ucurricular_repository.dart';
+export 'ucurricular/ucurricular_repository.dart';
+export 'grupo/base_grupo_repository.dart';
+export 'grupo/grupo_repository.dart';
+export 'local_storage/base_local_storage_repository.dart';
+export 'local_storage/local_storage_repository.dart';
+export 'edt/base_edt_repository.dart';
+export 'edt/edt_repository.dart';
+export 'usuario/base_usuario_repository.dart';
+export 'usuario/usuario_repository.dart';
