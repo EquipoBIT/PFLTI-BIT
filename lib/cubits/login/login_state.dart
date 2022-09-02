@@ -8,8 +8,6 @@ class LoginState extends Equatable {
   final LoginStatus status;
   final auth.User? user;
 
-  bool get isFormValid => email.isNotEmpty && password.isNotEmpty;
-
   const LoginState({
     required this.email,
     required this.password,
