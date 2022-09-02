@@ -4,11 +4,9 @@ import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
-class MockAuthRepository extends Mock
-    implements AuthRepository {}
+class MockAuthRepository extends Mock implements AuthRepository {}
 
 void main() {
-
   group('LoginCubit', () {
     late AuthRepository authRepository;
 
@@ -20,9 +18,9 @@ void main() {
     });
 
     test('initial state is LoginState', () {
-      expect(LoginCubit(authRepository: authRepository).state, LoginState.initial());
+      expect(LoginCubit(authRepository: authRepository).state,
+          LoginState.initial());
     });
-
 
     group('logInWithGoogle', () {
       blocTest<LoginCubit, LoginState>(
@@ -40,8 +38,18 @@ void main() {
         build: () => LoginCubit(authRepository: authRepository),
         act: (cubit) => cubit.logInWithGoogle(),
         expect: () => const <LoginState>[
-          LoginState( email: '', password: '', status: LoginStatus.submitting, user: null,),
-          LoginState( email: '', password: '', status: LoginStatus.success, user: null,),
+          LoginState(
+            email: '',
+            password: '',
+            status: LoginStatus.submitting,
+            user: null,
+          ),
+          LoginState(
+            email: '',
+            password: '',
+            status: LoginStatus.success,
+            user: null,
+          ),
         ],
       );
 
@@ -56,8 +64,18 @@ void main() {
         build: () => LoginCubit(authRepository: authRepository),
         act: (cubit) => cubit.logInWithGoogle(),
         expect: () => const <LoginState>[
-          LoginState( email: '', password: '', status: LoginStatus.submitting, user: null,),
-          LoginState( email: '', password: '', status: LoginStatus.error, user: null,),
+          LoginState(
+            email: '',
+            password: '',
+            status: LoginStatus.submitting,
+            user: null,
+          ),
+          LoginState(
+            email: '',
+            password: '',
+            status: LoginStatus.error,
+            user: null,
+          ),
         ],
       );
     });
