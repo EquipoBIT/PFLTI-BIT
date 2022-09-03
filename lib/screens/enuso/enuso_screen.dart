@@ -6,22 +6,24 @@ import '/widgets/widgets.dart';
 class EnUsoScreen extends StatelessWidget {
   static const String routeName = '/enuso';
 
+  const EnUsoScreen({super.key});
+
   static Route route() {
     return MaterialPageRoute(
-      settings: RouteSettings(name: routeName),
-      builder: (context) => EnUsoScreen(),
+      settings: const RouteSettings(name: routeName),
+      builder: (context) => const EnUsoScreen(),
     );
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: MyAppBar(title: 'EnUso'),
-        bottomNavigationBar: MyNavBar(screen: routeName),
+        appBar: const MyAppBar(title: 'EnUso'),
+        bottomNavigationBar: const MyNavBar(screen: routeName),
         body: BlocBuilder<EnUsoBloc, EnUsoState>(
           builder: (context, state) {
             if (state is EnUsoLoading) {
-              return Center(
+              return const Center(
                 child: CircularProgressIndicator(
                   color: Colors.black,
                 ),
@@ -48,7 +50,7 @@ class EnUsoScreen extends StatelessWidget {
                 ),
               );
             }
-            return Text('Something went wrong!');
+            return const Text('Something went wrong!');
           },
         ));
   }

@@ -9,9 +9,11 @@ import '/widgets/widgets.dart';
 class ProfileScreen extends StatelessWidget {
   static const String routeName = '/profile';
 
+  const ProfileScreen({super.key});
+
   static Route route() {
     return MaterialPageRoute(
-      settings: RouteSettings(name: routeName),
+      settings: const RouteSettings(name: routeName),
       builder: (context) => BlocProvider<ProfileBloc>(
         create: (context) => ProfileBloc(
           authBloc: BlocProvider.of<AuthBloc>(context),
@@ -19,7 +21,7 @@ class ProfileScreen extends StatelessWidget {
         )..add(
             LoadProfile(context.read<AuthBloc>().state.authUser),
           ),
-        child: ProfileScreen(),
+        child: const ProfileScreen(),
       ),
     );
   }
@@ -27,12 +29,12 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(title: 'Profile'),
-      bottomNavigationBar: MyNavBar(screen: routeName),
+      appBar: const MyAppBar(title: 'Profile'),
+      bottomNavigationBar: const MyNavBar(screen: routeName),
       body: BlocBuilder<ProfileBloc, ProfileState>(
         builder: (context, state) {
           if (state is ProfileLoading) {
-            return Center(
+            return const Center(
               child: CircularProgressIndicator(color: Colors.black),
             );
           }
@@ -43,9 +45,8 @@ class ProfileScreen extends StatelessWidget {
                   context.read<AuthRepository>().signOut();
                 },
                 style: ElevatedButton.styleFrom(
-                  shape: RoundedRectangleBorder(),
-                  primary: Colors.black,
-                  fixedSize: Size(200, 40),
+                  shape: const RoundedRectangleBorder(), backgroundColor: Colors.black,
+                  fixedSize: const Size(200, 40),
                 ),
                 child: Text(
                   'Sign Out',
@@ -60,7 +61,7 @@ class ProfileScreen extends StatelessWidget {
             return Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Container(
+                SizedBox(
                   width: double.infinity,
                   child: Center(
                     child: Text(
@@ -75,9 +76,8 @@ class ProfileScreen extends StatelessWidget {
                     Navigator.pushNamed(context, '/login');
                   },
                   style: ElevatedButton.styleFrom(
-                    shape: RoundedRectangleBorder(),
-                    primary: Colors.black,
-                    fixedSize: Size(200, 40),
+                    shape: const RoundedRectangleBorder(), backgroundColor: Colors.black,
+                    fixedSize: const Size(200, 40),
                   ),
                   child: Text(
                     'Login',
@@ -89,7 +89,7 @@ class ProfileScreen extends StatelessWidget {
               ],
             );
           } else {
-            return Text('Something went wrong');
+            return const Text('Something went wrong');
           }
         },
       ),

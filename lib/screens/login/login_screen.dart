@@ -10,10 +10,12 @@ import '../screens.dart';
 class LoginScreen extends StatelessWidget {
   static const String routeName = '/login';
 
+  const LoginScreen({super.key});
+
   static Route route() {
     return MaterialPageRoute(
-      settings: RouteSettings(name: routeName),
-      builder: (context) => LoginScreen(),
+      settings: const RouteSettings(name: routeName),
+      builder: (context) => const LoginScreen(),
     );
   }
 
@@ -23,10 +25,10 @@ class LoginScreen extends StatelessWidget {
       onWillPop: () async => false,
       child: BlocListener<AuthBloc, AuthState>(
           listener: (context, state) {
-            print("Listener");
+            debugPrint("Listener");
             if (state.status == AuthStatus.unauthenticated) {
               Timer(
-                Duration(seconds: 1),
+                const Duration(seconds: 1),
                 () => Navigator.of(context).pushNamedAndRemoveUntil(
                   LoginScreen.routeName,
                   ModalRoute.withName('/login'),
@@ -34,7 +36,7 @@ class LoginScreen extends StatelessWidget {
               );
             } else if (state.status == AuthStatus.authenticated) {
               Timer(
-                Duration(seconds: 1),
+                const Duration(seconds: 1),
                 () => Navigator.of(context).pushNamed(TermsScreen.routeName),
               );
             }
@@ -97,8 +99,7 @@ class _GoogleLoginButton extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(30),
-        ),
-        primary: theme.colorScheme.secondary,
+        ), backgroundColor: theme.colorScheme.secondary,
       ),
       icon: const Icon(FontAwesomeIcons.graduationCap, color: Colors.white),
       onPressed: () => context.read<LoginCubit>().logInWithGoogle(),

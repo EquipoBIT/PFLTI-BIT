@@ -8,14 +8,14 @@ class EdtScreen extends StatelessWidget {
 
   static Route route({required Edt edt}) {
     return MaterialPageRoute(
-      settings: RouteSettings(name: routeName),
+      settings: const RouteSettings(name: routeName),
       builder: (context) => EdtScreen(edt: edt),
     );
   }
 
   final Edt edt;
 
-  const EdtScreen({
+  const EdtScreen({super.key, 
     required this.edt,
   });
 
@@ -53,10 +53,10 @@ class EdtScreen extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.all(5.0),
+                      margin: const EdgeInsets.all(5.0),
                       width: MediaQuery.of(context).size.width - 10,
                       height: 50,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.black,
                       ),
                       child: Padding(

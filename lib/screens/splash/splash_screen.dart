@@ -9,10 +9,12 @@ import '../login/login_screen.dart';
 class SplashScreen extends StatelessWidget {
   static const String routeName = '/splash';
 
+  const SplashScreen({super.key});
+
   static Route route() {
     return MaterialPageRoute(
-      settings: RouteSettings(name: routeName),
-      builder: (context) => SplashScreen(),
+      settings: const RouteSettings(name: routeName),
+      builder: (context) => const SplashScreen(),
     );
   }
 
@@ -22,10 +24,10 @@ class SplashScreen extends StatelessWidget {
       onWillPop: () async => false,
       child: BlocListener<AuthBloc, AuthState>(
           listener: (context, state) {
-            print("Listener");
+            debugPrint("Listener");
             if (state.status == AuthStatus.unauthenticated) {
               Timer(
-                Duration(seconds: 5),
+                const Duration(seconds: 5),
                 () => Navigator.of(context).pushNamedAndRemoveUntil(
                   LoginScreen.routeName,
                   ModalRoute.withName('/login'),
@@ -33,42 +35,11 @@ class SplashScreen extends StatelessWidget {
               );
             } else if (state.status == AuthStatus.authenticated) {
               Timer(
-                Duration(seconds: 5),
+                const Duration(seconds: 5),
                 () => Navigator.of(context).pushNamed(HomeScreen.routeName),
               );
             }
           },
-
-/*        
-        child: Scaffold(
-          body: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Center(
-                child: Image(
-                  image: AssetImage('assets/images/logo_bit.png'),
-                  width: 125,
-                  height: 125,
-                ),
-              ),
-              SizedBox(height: 30),
-              Container(
-                color: Colors.black,
-                padding: const EdgeInsets.symmetric(
-                  vertical: 10,
-                  horizontal: 20,
-                ),
-                child: Text(
-                  'UTEC Gestion de EDTs',
-                  style: Theme.of(context).textTheme.headline2!.copyWith(
-                        color: Colors.white,
-                      ),
-                ),
-              )
-            ],
-          ),
-        ),
-*/
           child: Scaffold(
             body: Padding(
               padding: const EdgeInsets.all(20.0),
