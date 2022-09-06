@@ -21,11 +21,77 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return BlocListener<AuthBloc, AuthState>(
+        listenWhen: (previous, current) =>
+            previous.authUser != current.authUser,
+        listener: (context, state) {
+          debugPrint('Login screen Auth Listener');
+          if (state.status == AuthStatus.unauthenticated) {
+            Timer(
+              const Duration(seconds: 1),
+              () => Navigator.of(context).pushNamedAndRemoveUntil(
+                LoginScreen.routeName,
+                ModalRoute.withName('/login'),
+              ),
+            );
+          } else if (state.status == AuthStatus.authenticated) {
+            Timer(
+              const Duration(seconds: 1),
+              () => Navigator.of(context).pushNamed(TermsScreen.routeName),
+            );
+          }
+        },
+        child: Scaffold(
+          body: Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Align(
+              alignment: const Alignment(0, -1 / 3),
+              child: SingleChildScrollView(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Container(
+                      color: Colors.black,
+                      padding: const EdgeInsets.symmetric(
+                        vertical: 10,
+                        horizontal: 20,
+                      ),
+                      child: Text(
+                        'UTEC Gestion de EDTs',
+                        style: Theme.of(context).textTheme.headline2!.copyWith(
+                              color: Colors.white,
+                            ),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                    Image.asset(
+                      'assets/images/logo_utec.png',
+                      height: 180,
+                    ),
+                    const SizedBox(height: 16),
+                    Image.asset(
+                      'assets/images/logo_bit.png',
+                      height: 60,
+                    ),
+                    const SizedBox(height: 16),
+                    _GoogleLoginButton(),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ));
+  }
+}
+
+/*
+  @override
+  Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: () async => false,
       child: BlocListener<AuthBloc, AuthState>(
           listener: (context, state) {
-            debugPrint("Listener");
+            debugPrint("AuthBloc BlocListener");
             if (state.status == AuthStatus.unauthenticated) {
               Timer(
                 const Duration(seconds: 1),
@@ -85,6 +151,7 @@ class LoginScreen extends StatelessWidget {
     );
   }
 }
+*/
 
 class _GoogleLoginButton extends StatelessWidget {
   @override
@@ -99,7 +166,8 @@ class _GoogleLoginButton extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(30),
-        ), backgroundColor: theme.colorScheme.secondary,
+        ),
+        backgroundColor: theme.colorScheme.secondary,
       ),
       icon: const Icon(FontAwesomeIcons.graduationCap, color: Colors.white),
       onPressed: () => context.read<LoginCubit>().logInWithGoogle(),
