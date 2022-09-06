@@ -22,8 +22,6 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocListener<AuthBloc, AuthState>(
-        listenWhen: (previous, current) =>
-            previous.authUser != current.authUser,
         listener: (context, state) {
           debugPrint('Login screen Auth Listener');
           if (state.status == AuthStatus.unauthenticated) {
