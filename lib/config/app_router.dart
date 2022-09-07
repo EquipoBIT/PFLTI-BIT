@@ -4,14 +4,12 @@ import '/screens/screens.dart';
 
 class AppRouter {
   static Route onGenerateRoute(RouteSettings settings) {
-    print('Route: ${settings.name}');
+    debugPrint('Route: ${settings.name}');
     switch (settings.name) {
       case '/':
         return HomeScreen.route();
       case HomeScreen.routeName:
         return HomeScreen.route();
-      case SplashScreen.routeName:
-        return SplashScreen.route();
       case EdtScreen.routeName:
         return EdtScreen.route(edt: settings.arguments as Edt);
       case GrillaScreen.routeName:

@@ -12,8 +12,11 @@ import '/repositories/repositories.dart';
 import '/screens/screens.dart';
 import '/simple_bloc_observer.dart';
 import '/models/models.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 Future<void> main() async {
+  WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
@@ -22,15 +25,18 @@ Future<void> main() async {
   Hive.registerAdapter(EdtAdapter());
   BlocOverrides.runZoned(
     () {
-      runApp(MyApp());
+      runApp(const MyApp());
     },
     blocObserver: SimpleBlocObserver(),
   );
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
+    FlutterNativeSplash.remove();
     return MaterialApp(
       title: 'UTEC Gestion EDTs',
       debugShowCheckedModeBanner: false,
@@ -87,7 +93,7 @@ class MyApp extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             theme: theme(),
             onGenerateRoute: AppRouter.onGenerateRoute,
-            initialRoute: SplashScreen.routeName,
+            initialRoute: LoginScreen.routeName,
           ),
         ),
       ),
