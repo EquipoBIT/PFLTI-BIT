@@ -1,10 +1,9 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'package:network_image_mock/network_image_mock.dart';
 import 'package:pfltibit/models/edt_model.dart';
 import 'package:pfltibit/screens/screens.dart';
-import 'package:mocktail/mocktail.dart';
 import 'package:flutter/material.dart';
 
-class MockEdt extends Mock implements Edt {}
 
 void main() {
   group('EDT Screen', () {
@@ -31,7 +30,7 @@ void main() {
       );
 
       EdtInfo page = EdtInfo(edt: edt);
-      await tester.pumpWidget(makeTestableWidget(child: page));
+      await mockNetworkImagesFor(() =>tester.pumpWidget(makeTestableWidget(child: page)));
       expect(find.text('Detalle del EDT'), findsOneWidget);
       expect(find.text('Actividad'), findsOneWidget);
       expect(find.text('Estudiante Asignado'), findsOneWidget);
