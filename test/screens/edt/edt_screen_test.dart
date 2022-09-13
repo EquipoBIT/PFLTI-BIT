@@ -4,7 +4,6 @@ import 'package:pfltibit/models/edt_model.dart';
 import 'package:pfltibit/screens/screens.dart';
 import 'package:flutter/material.dart';
 
-
 void main() {
   group('EDT Screen', () {
     setUp(() {});
@@ -30,7 +29,8 @@ void main() {
       );
 
       EdtInfo page = EdtInfo(edt: edt);
-      await mockNetworkImagesFor(() =>tester.pumpWidget(makeTestableWidget(child: page)));
+      await mockNetworkImagesFor(
+          () => tester.pumpWidget(makeTestableWidget(child: page)));
       expect(find.text('Detalle del EDT'), findsOneWidget);
       expect(find.text('Actividad'), findsOneWidget);
       expect(find.text('Estudiante Asignado'), findsOneWidget);
