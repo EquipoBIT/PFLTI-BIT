@@ -1,7 +1,9 @@
 D:/1utec/ProyectoLTI/pfltibit/pfltibit/build/windows/runner/Debug/data/icudtl.dat
 D:/1utec/ProyectoLTI/pfltibit/pfltibit/build/windows/runner/Debug/flutter_windows.dll
 D:/1utec/ProyectoLTI/pfltibit/pfltibit/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
+D:/1utec/ProyectoLTI/pfltibit/pfltibit/build/windows/runner/Debug/data/flutter_assets/assets/images/logo_bit%20-%20copia%20-%20copia.png
 D:/1utec/ProyectoLTI/pfltibit/pfltibit/build/windows/runner/Debug/data/flutter_assets/assets/images/logo_bit.png
+D:/1utec/ProyectoLTI/pfltibit/pfltibit/build/windows/runner/Debug/data/flutter_assets/assets/images/logo_utec%20-%20copia.png
 D:/1utec/ProyectoLTI/pfltibit/pfltibit/build/windows/runner/Debug/data/flutter_assets/assets/images/logo_utec.png
 D:/1utec/ProyectoLTI/pfltibit/pfltibit/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
 D:/1utec/ProyectoLTI/pfltibit/pfltibit/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
