@@ -39,46 +39,57 @@ class LoginScreen extends StatelessWidget {
             );
           }
         },
-        child: Scaffold(
-          body: Padding(
-            padding: const EdgeInsets.all(20.0),
-            child: Align(
-              alignment: const Alignment(0, -1 / 3),
-              child: SingleChildScrollView(
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Container(
-                      color: Colors.black,
-                      padding: const EdgeInsets.symmetric(
-                        vertical: 10,
-                        horizontal: 20,
-                      ),
-                      child: Text(
-                        'UTEC Gestion de EDTs',
-                        style: Theme.of(context).textTheme.headline2!.copyWith(
-                              color: Colors.white,
-                            ),
-                      ),
-                    ),
-                    const SizedBox(height: 16),
-                    Image.asset(
-                      'assets/images/logo_utec.png',
-                      height: 180,
-                    ),
-                    const SizedBox(height: 16),
-                    Image.asset(
-                      'assets/images/logo_bit.png',
-                      height: 60,
-                    ),
-                    const SizedBox(height: 16),
-                    const GoogleLoginButton(),
-                  ],
+        child: const LoginPage());
+  }
+}
+
+class LoginPage extends StatelessWidget {
+  const LoginPage({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: Align(
+          alignment: const Alignment(0, -1 / 3),
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Container(
+                  color: Colors.black,
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 10,
+                    horizontal: 20,
+                  ),
+                  child: Text(
+                    'UTEC Gestion de EDTs',
+                    style: Theme.of(context).textTheme.headline2!.copyWith(
+                          color: Colors.white,
+                        ),
+                  ),
                 ),
-              ),
+                const SizedBox(height: 16),
+                Image.asset(
+                  'assets/images/logo_utec.png',
+                  height: 180,
+                ),
+                const SizedBox(height: 16),
+                Image.asset(
+                  'assets/images/logo_bit.png',
+                  height: 60,
+                ),
+                const SizedBox(height: 16),
+                const GoogleLoginButton(),
+              ],
             ),
           ),
-        ));
+        ),
+      ),
+    );
   }
 }
 

@@ -4,14 +4,14 @@ import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   group('LoginScreen', () {
-    setUp(() async {});
+    setUp(() {});
 
     Widget makeTestableWidget({required Widget child}) {
       return MaterialApp(home: child);
     }
 
     testWidgets('Testing LoginScreen', (tester) async {
-      GoogleLoginButton page = const GoogleLoginButton();
+      LoginPage page = const LoginPage();
       await tester.pumpWidget(makeTestableWidget(child: page));
       expect(find.text('LOG IN WITH UTEC'), findsOneWidget);
     });
