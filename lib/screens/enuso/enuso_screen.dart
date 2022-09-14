@@ -17,41 +17,54 @@ class EnUsoScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: const MyAppBar(title: 'EnUso'),
-        bottomNavigationBar: const MyNavBar(screen: routeName),
-        body: BlocBuilder<EnUsoBloc, EnUsoState>(
-          builder: (context, state) {
-            if (state is EnUsoLoading) {
-              return const Center(
-                child: CircularProgressIndicator(
-                  color: Colors.black,
-                ),
-              );
-            }
-            if (state is EnUsoLoaded) {
-              return Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 10.0),
-                child: GridView.builder(
-                  padding: const EdgeInsets.symmetric(
-                      horizontal: 8.0, vertical: 16.0),
-                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 1,
-                    childAspectRatio: 2.25,
+    return const Scaffold(
+        appBar: MyAppBar(title: 'EnUso'),
+        bottomNavigationBar: MyNavBar(screen: routeName),
+        body: GrillaEnUso());
+  }
+}
+
+class GrillaEnUso extends StatelessWidget {
+  const GrillaEnUso({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return BlocBuilder<EnUsoBloc, EnUsoState>(
+      builder: (context, state) {
+        if (state is EnUsoLoading) {
+          return const Center(
+            child: CircularProgressIndicator(
+              key: Key('CircularProgressIndicator'),
+              color: Colors.black,
+            ),
+          );
+        }
+        if (state is EnUsoLoaded) {
+          return Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10.0),
+            child: GridView.builder(
+              key: const Key('Grilla En Uso'),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 8.0, vertical: 16.0),
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 1,
+                childAspectRatio: 2.25,
+              ),
+              itemCount: state.enuso.edts.length,
+              itemBuilder: (BuildContext context, int index) {
+                return Center(
+                  child: EdtCard.enuso(
+                    edt: state.enuso.edts[index],
                   ),
-                  itemCount: state.enuso.edts.length,
-                  itemBuilder: (BuildContext context, int index) {
-                    return Center(
-                      child: EdtCard.enuso(
-                        edt: state.enuso.edts[index],
-                      ),
-                    );
-                  },
-                ),
-              );
-            }
-            return const Text('Something went wrong!');
-          },
-        ));
+                );
+              },
+            ),
+          );
+        }
+        return const Text('Something went wrong!');
+      },
+    );
   }
 }
