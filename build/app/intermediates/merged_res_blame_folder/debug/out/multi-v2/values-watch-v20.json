@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\1utec\\ProyectoLTI\\pfltibit\\PFLTI-BIT\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
+            "outputFile": "D:\\1utec\\ProyectoLTI\\pfltibit\\pfltibit\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
             "map": [
                 {
                     "source": "C:\\Users\\adria\\.gradle\\caches\\transforms-3\\66e089c069618d46ecbcfc30035e5ab3\\transformed\\jetified-play-services-auth-20.0.1\\res\\values-watch-v20\\values.xml",

@@ -8,7 +8,7 @@ class EdtScreen extends StatelessWidget {
 
   static Route route({required Edt edt}) {
     return MaterialPageRoute(
-      settings: RouteSettings(name: routeName),
+      settings: const RouteSettings(name: routeName),
       builder: (context) => EdtScreen(edt: edt),
     );
   }
@@ -16,6 +16,7 @@ class EdtScreen extends StatelessWidget {
   final Edt edt;
 
   const EdtScreen({
+    super.key,
     required this.edt,
   });
 
@@ -27,6 +28,22 @@ class EdtScreen extends StatelessWidget {
         screen: routeName,
         edt: edt,
       ),
+      body: EdtInfo(edt: edt),
+    );
+  }
+}
+
+class EdtInfo extends StatelessWidget {
+  const EdtInfo({
+    Key? key,
+    required this.edt,
+  }) : super(key: key);
+
+  final Edt edt;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
       body: ListView(
         children: [
           CarouselSlider(
@@ -53,10 +70,10 @@ class EdtScreen extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.all(5.0),
+                      margin: const EdgeInsets.all(5.0),
                       width: MediaQuery.of(context).size.width - 10,
                       height: 50,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.black,
                       ),
                       child: Padding(
@@ -73,7 +90,7 @@ class EdtScreen extends StatelessWidget {
                                   .copyWith(color: Colors.white),
                             ),
                             Text(
-                              'Saldo de tiempo: ${edt.edtSaldoTiempo}',
+                              'Saldo: ${edt.edtSaldoTiempo}',
                               style: Theme.of(context)
                                   .textTheme
                                   .headline5!
@@ -152,7 +169,7 @@ class EdtScreen extends StatelessWidget {
                   children: <Widget>[
                     ListTile(
                       title: Text(
-                        'IDs: ${edt.edtEstAsigId}',
+                        'ID: ${edt.edtEstAsigId}',
                         style: Theme.of(context).textTheme.bodyText1,
                       ),
                     )

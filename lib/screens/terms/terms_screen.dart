@@ -9,12 +9,12 @@ class TermsScreen extends StatelessWidget {
 
   static Route route() {
     return MaterialPageRoute(
-      settings: RouteSettings(name: routeName),
-      builder: (context) => TermsScreen(),
+      settings: const RouteSettings(name: routeName),
+      builder: (context) => const TermsScreen(),
     );
   }
 
-  const TermsScreen();
+  const TermsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -148,17 +148,17 @@ class TermsScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       TextButton(
-                          child: Text('Acepto'),
+                          child: const Text('Acepto'),
                           onPressed: () {
-                            CambioTermsBool();
+                            cambioTermsBool();
                             Timer(
-                              Duration(seconds: 1),
+                              const Duration(seconds: 1),
                               () => Navigator.of(context)
                                   .pushNamed(HomeScreen.routeName),
                             );
                           }),
                       TextButton(
-                          child: Text('No acepto'),
+                          child: const Text('No acepto'),
                           onPressed: () {
                             Navigator.pushNamed(context, '/login');
                             context.read<AuthRepository>().signOut();
@@ -173,7 +173,7 @@ class TermsScreen extends StatelessWidget {
   }
 }
 
-void CambioTermsBool() {
-  print(
+void cambioTermsBool() {
+  debugPrint(
       'aca necesimatos actualizar el boolean que indica que acepto los terminos');
 }

@@ -19,6 +19,8 @@ class LoginCubit extends Cubit<LoginState> {
     try {
       await _authRepository.logInWithGoogle();
       emit(state.copyWith(status: LoginStatus.success));
-    } catch (_) {}
+    } catch (_) {
+      emit(state.copyWith(status: LoginStatus.error));
+    }
   }
 }

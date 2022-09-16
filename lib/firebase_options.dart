@@ -23,10 +23,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for macos - '
@@ -56,6 +53,7 @@ class DefaultFirebaseOptions {
     projectId: 'pflti-dev',
     authDomain: 'pflti-dev.firebaseapp.com',
     storageBucket: 'pflti-dev.appspot.com',
+    measurementId: 'G-DSHPF4MQYV',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
@@ -64,5 +62,16 @@ class DefaultFirebaseOptions {
     messagingSenderId: '434596075479',
     projectId: 'pflti-dev',
     storageBucket: 'pflti-dev.appspot.com',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyAAoeZD-yX9NAzny3_dJZzlf7OHnud8pkI',
+    appId: '1:434596075479:ios:985a56cb311c9c31b65d92',
+    messagingSenderId: '434596075479',
+    projectId: 'pflti-dev',
+    storageBucket: 'pflti-dev.appspot.com',
+    androidClientId: '434596075479-31mfi6vp6oglp9fjbj2hm8sc2e7hrroq.apps.googleusercontent.com',
+    iosClientId: '434596075479-j4gqoqrmce1iovkdppqbabp8pac8lf6t.apps.googleusercontent.com',
+    iosBundleId: 'com.example.pfltibit',
   );
 }

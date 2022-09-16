@@ -7,10 +7,12 @@ import '/widgets/widgets.dart';
 class HomeScreen extends StatelessWidget {
   static const String routeName = '/';
 
+  const HomeScreen({super.key});
+
   static Route route() {
     return MaterialPageRoute(
-      settings: RouteSettings(name: routeName),
-      builder: (_) => HomeScreen(),
+      settings: const RouteSettings(name: routeName),
+      builder: (_) => const HomeScreen(),
     );
   }
 
@@ -19,11 +21,11 @@ class HomeScreen extends StatelessWidget {
     return WillPopScope(
       onWillPop: () async => false,
       child: Scaffold(
-        appBar: MyAppBar(
+        appBar: const MyAppBar(
           title: 'UTEC Gestion de EDTs',
           automaticallyImplyLeading: false,
         ),
-        bottomNavigationBar: MyNavBar(screen: routeName),
+        bottomNavigationBar: const MyNavBar(screen: routeName),
         body: Center(
           child: SingleChildScrollView(
             child: Column(
@@ -31,7 +33,7 @@ class HomeScreen extends StatelessWidget {
                 BlocBuilder<UCurricularBloc, UCurricularState>(
                   builder: (context, state) {
                     if (state is UCurricularLoading) {
-                      return Center(
+                      return const Center(
                         child: CircularProgressIndicator(),
                       );
                     }
@@ -49,15 +51,15 @@ class HomeScreen extends StatelessWidget {
                             .toList(),
                       );
                     } else {
-                      return Text('Something went wrong.');
+                      return const Text('Something went wrong.');
                     }
                   },
                 ),
-                SectionTitle(title: 'EDTs ASIGNADAS'),
+                const SectionTitle(title: 'EDTs ASIGNADAS'),
                 BlocBuilder<EdtBloc, EdtState>(
                   builder: (context, state) {
                     if (state is EdtLoading) {
-                      return Center(
+                      return const Center(
                         child: CircularProgressIndicator(),
                       );
                     }
@@ -66,7 +68,7 @@ class HomeScreen extends StatelessWidget {
                         edts: state.edts.toList(),
                       );
                     } else {
-                      return Text('Something went wrong.');
+                      return const Text('Something went wrong.');
                     }
                   },
                 ),

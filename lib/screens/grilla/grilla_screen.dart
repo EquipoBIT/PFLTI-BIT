@@ -9,14 +9,14 @@ class GrillaScreen extends StatelessWidget {
 
   static Route route({required UCurricular ucurricular}) {
     return MaterialPageRoute(
-      settings: RouteSettings(name: routeName),
+      settings: const RouteSettings(name: routeName),
       builder: (context) => GrillaScreen(ucurricular: ucurricular),
     );
   }
 
   final UCurricular ucurricular;
 
-  const GrillaScreen({
+  const GrillaScreen({super.key, 
     required this.ucurricular,
   });
 
@@ -24,11 +24,11 @@ class GrillaScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: MyAppBar(title: ucurricular.ucNombre),
-      bottomNavigationBar: MyNavBar(screen: routeName),
+      bottomNavigationBar: const MyNavBar(screen: routeName),
       body: BlocBuilder<EdtBloc, EdtState>(
         builder: (context, state) {
           if (state is EdtLoading) {
-            return Center(
+            return const Center(
               child: CircularProgressIndicator(color: Colors.black),
             );
           }
@@ -56,7 +56,7 @@ class GrillaScreen extends StatelessWidget {
               },
             );
           } else {
-            return Text('Something went wrong');
+            return const Text('Something went wrong');
           }
         },
       ),

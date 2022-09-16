@@ -1,14 +1,12 @@
 -- Merging decision tree log ---
 application
-INJECTED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\main\AndroidManifest.xml:3:4-33:19
-MERGED from [:firebase_auth] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
-MERGED from [:firebase_auth] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
-MERGED from [:cloud_firestore] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
-MERGED from [:cloud_firestore] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
-MERGED from [:firebase_core] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
-MERGED from [:firebase_core] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
-MERGED from [:pay_android] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\pay_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-17:19
-MERGED from [:pay_android] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\pay_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-17:19
+INJECTED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\main\AndroidManifest.xml:3:4-33:19
+MERGED from [:firebase_auth] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
+MERGED from [:firebase_auth] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
+MERGED from [:cloud_firestore] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
+MERGED from [:cloud_firestore] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
+MERGED from [:firebase_core] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
+MERGED from [:firebase_core] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\adria\.gradle\caches\transforms-3\542a859793ec57d6a4d40865c7efc6d9\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\adria\.gradle\caches\transforms-3\542a859793ec57d6a4d40865c7efc6d9\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
 MERGED from [com.google.firebase:firebase-auth:21.0.7] C:\Users\adria\.gradle\caches\transforms-3\6b415a3bc2b441250bf51af87084b635\transformed\jetified-firebase-auth-21.0.7\AndroidManifest.xml:26:5-71:19
@@ -25,10 +23,6 @@ MERGED from [com.google.android.gms:play-services-auth:20.0.1] C:\Users\adria\.g
 MERGED from [com.google.android.gms:play-services-auth:20.0.1] C:\Users\adria\.gradle\caches\transforms-3\66e089c069618d46ecbcfc30035e5ab3\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:22:5-38:19
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\adria\.gradle\caches\transforms-3\6fc382fce3370b231ba05fbc8b124f61\transformed\jetified-play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\adria\.gradle\caches\transforms-3\6fc382fce3370b231ba05fbc8b124f61\transformed\jetified-play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-identity:17.0.0] C:\Users\adria\.gradle\caches\transforms-3\fcc52f610fff961df0ae79750458aee5\transformed\jetified-play-services-identity-17.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-identity:17.0.0] C:\Users\adria\.gradle\caches\transforms-3\fcc52f610fff961df0ae79750458aee5\transformed\jetified-play-services-identity-17.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\adria\.gradle\caches\transforms-3\03999a7c2e7ad5cc9d51e8813344d1ae\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:30:5-36:19
-MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\adria\.gradle\caches\transforms-3\03999a7c2e7ad5cc9d51e8813344d1ae\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:30:5-36:19
 MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\adria\.gradle\caches\transforms-3\19fea4fb28dedd992824e13cc158e7a1\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
 MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\adria\.gradle\caches\transforms-3\19fea4fb28dedd992824e13cc158e7a1\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
 MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\adria\.gradle\caches\transforms-3\0eca67a449d06f1154e3d0c5a54f4038\transformed\jetified-play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
@@ -42,19 +36,19 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ad
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.6.0] C:\Users\adria\.gradle\caches\transforms-3\aa701b47cec244085d46a1a42fcc7fb9\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
 	android:name
-		INJECTED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\main\AndroidManifest.xml
 manifest
-ADDED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\main\AndroidManifest.xml:1:1-34:12
-INJECTED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\main\AndroidManifest.xml:1:1-34:12
-INJECTED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\main\AndroidManifest.xml:1:1-34:12
-INJECTED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\main\AndroidManifest.xml:1:1-34:12
-MERGED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\main\AndroidManifest.xml:1:1-34:12
-MERGED from [:firebase_auth] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
-MERGED from [:cloud_firestore] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
-MERGED from [:firebase_core] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
-MERGED from [:path_provider_android] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
-MERGED from [:pay_android] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\pay_android\intermediates\merged_manifest\debug\AndroidManifest.xml:6:1-19:12
-MERGED from [:google_sign_in_android] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\google_sign_in_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-11:12
+ADDED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\main\AndroidManifest.xml:1:1-34:12
+INJECTED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\main\AndroidManifest.xml:1:1-34:12
+INJECTED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\main\AndroidManifest.xml:1:1-34:12
+INJECTED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\main\AndroidManifest.xml:1:1-34:12
+MERGED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\main\AndroidManifest.xml:1:1-34:12
+MERGED from [:firebase_auth] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
+MERGED from [:cloud_firestore] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
+MERGED from [:firebase_core] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
+MERGED from [:path_provider_android] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:google_sign_in_android] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\google_sign_in_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:flutter_native_splash] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\flutter_native_splash\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\adria\.gradle\caches\transforms-3\90bf28973fd446d08c79e8865d177be2\transformed\multidex-2.0.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\adria\.gradle\caches\transforms-3\e1f5bf00836c889852a9a2014464d260\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\adria\.gradle\caches\transforms-3\542a859793ec57d6a4d40865c7efc6d9\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
@@ -63,12 +57,9 @@ MERGED from [com.google.firebase:firebase-firestore:24.2.2] C:\Users\adria\.grad
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\adria\.gradle\caches\transforms-3\89ba8e05a34cf734bca3914f66f9a9fb\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] C:\Users\adria\.gradle\caches\transforms-3\035af362cba75ba70d871140ede1df7a\transformed\jetified-firebase-appcheck-interop-16.0.0\AndroidManifest.xml:15:1-26:12
 MERGED from [com.google.firebase:firebase-common:20.1.1] C:\Users\adria\.gradle\caches\transforms-3\fccaa6a289edc53f66333a729d5bb147\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:15:1-40:12
-MERGED from [com.google.android.gms:play-services-wallet:18.1.2] C:\Users\adria\.gradle\caches\transforms-3\a4704a6098d47fda30f4098900d7643c\transformed\jetified-play-services-wallet-18.1.2\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-auth:20.0.1] C:\Users\adria\.gradle\caches\transforms-3\66e089c069618d46ecbcfc30035e5ab3\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:17:1-40:12
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\adria\.gradle\caches\transforms-3\6fc382fce3370b231ba05fbc8b124f61\transformed\jetified-play-services-safetynet-17.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\adria\.gradle\caches\transforms-3\661f963381eb53c6cea0a92b5aed8fdd\transformed\jetified-play-services-auth-api-phone-18.0.1\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-identity:17.0.0] C:\Users\adria\.gradle\caches\transforms-3\fcc52f610fff961df0ae79750458aee5\transformed\jetified-play-services-identity-17.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\adria\.gradle\caches\transforms-3\03999a7c2e7ad5cc9d51e8813344d1ae\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:17:1-38:12
 MERGED from [com.google.android.gms:play-services-auth-base:18.0.1] C:\Users\adria\.gradle\caches\transforms-3\acbed7d481c2b99e9b41b58875afe33a\transformed\jetified-play-services-auth-base-18.0.1\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\adria\.gradle\caches\transforms-3\7c741d4936f86c00542d609dae4f68c7\transformed\jetified-firebase-database-collection-18.0.1\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\adria\.gradle\caches\transforms-3\19fea4fb28dedd992824e13cc158e7a1\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:16:1-24:12
@@ -95,39 +86,39 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\adria\.gradl
 MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\adria\.gradle\caches\transforms-3\6bd2ae4dd04c2b64a50f7e9188ad8e3d\transformed\jetified-grpc-android-1.44.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\adria\.gradle\caches\transforms-3\8129b238d4d069661aca07bff47ad65b\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\adria\.gradle\caches\transforms-3\f95b31beb5b7f2eb055a97bf2e6fcf0f\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\debug\AndroidManifest.xml:1:1-8:12
-INJECTED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\debug\AndroidManifest.xml:1:1-8:12
-INJECTED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\debug\AndroidManifest.xml:1:1-8:12
+INJECTED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\debug\AndroidManifest.xml:1:1-8:12
+INJECTED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\debug\AndroidManifest.xml:1:1-8:12
+INJECTED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\debug\AndroidManifest.xml:1:1-8:12
 	package
-		ADDED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\main\AndroidManifest.xml:2:5-35
-		INJECTED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\main\AndroidManifest.xml
-		INJECTED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\debug\AndroidManifest.xml
+		ADDED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\main\AndroidManifest.xml:2:5-35
+		INJECTED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\debug\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\main\AndroidManifest.xml:1:1-34:12
-		INJECTED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\debug\AndroidManifest.xml
+		INJECTED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\main\AndroidManifest.xml:1:1-34:12
+		INJECTED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\debug\AndroidManifest.xml
 	android:versionCode
-		INJECTED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\main\AndroidManifest.xml:1:1-34:12
-		INJECTED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\debug\AndroidManifest.xml
+		INJECTED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\main\AndroidManifest.xml:1:1-34:12
+		INJECTED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\debug\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\main\AndroidManifest.xml:1:11-69
+		ADDED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\main\AndroidManifest.xml:1:11-69
 uses-sdk
-INJECTED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\main\AndroidManifest.xml
-INJECTED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\main\AndroidManifest.xml
-MERGED from [:firebase_auth] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:firebase_auth] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:cloud_firestore] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:cloud_firestore] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:firebase_core] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:firebase_core] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:path_provider_android] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:path_provider_android] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:pay_android] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\pay_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-11:41
-MERGED from [:pay_android] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\pay_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-11:41
-MERGED from [:google_sign_in_android] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\google_sign_in_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:google_sign_in_android] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\google_sign_in_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+INJECTED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\main\AndroidManifest.xml
+INJECTED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\main\AndroidManifest.xml
+MERGED from [:firebase_auth] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_auth] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:cloud_firestore] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:cloud_firestore] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_core] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_core] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:google_sign_in_android] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\google_sign_in_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:google_sign_in_android] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\google_sign_in_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_native_splash] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\flutter_native_splash\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_native_splash] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\flutter_native_splash\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\adria\.gradle\caches\transforms-3\90bf28973fd446d08c79e8865d177be2\transformed\multidex-2.0.1\AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\adria\.gradle\caches\transforms-3\90bf28973fd446d08c79e8865d177be2\transformed\multidex-2.0.1\AndroidManifest.xml:20:5-43
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\adria\.gradle\caches\transforms-3\e1f5bf00836c889852a9a2014464d260\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
@@ -144,18 +135,12 @@ MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] C:\Users\adri
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] C:\Users\adria\.gradle\caches\transforms-3\035af362cba75ba70d871140ede1df7a\transformed\jetified-firebase-appcheck-interop-16.0.0\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-common:20.1.1] C:\Users\adria\.gradle\caches\transforms-3\fccaa6a289edc53f66333a729d5bb147\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-common:20.1.1] C:\Users\adria\.gradle\caches\transforms-3\fccaa6a289edc53f66333a729d5bb147\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.gms:play-services-wallet:18.1.2] C:\Users\adria\.gradle\caches\transforms-3\a4704a6098d47fda30f4098900d7643c\transformed\jetified-play-services-wallet-18.1.2\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-wallet:18.1.2] C:\Users\adria\.gradle\caches\transforms-3\a4704a6098d47fda30f4098900d7643c\transformed\jetified-play-services-wallet-18.1.2\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth:20.0.1] C:\Users\adria\.gradle\caches\transforms-3\66e089c069618d46ecbcfc30035e5ab3\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth:20.0.1] C:\Users\adria\.gradle\caches\transforms-3\66e089c069618d46ecbcfc30035e5ab3\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\adria\.gradle\caches\transforms-3\6fc382fce3370b231ba05fbc8b124f61\transformed\jetified-play-services-safetynet-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\adria\.gradle\caches\transforms-3\6fc382fce3370b231ba05fbc8b124f61\transformed\jetified-play-services-safetynet-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\adria\.gradle\caches\transforms-3\661f963381eb53c6cea0a92b5aed8fdd\transformed\jetified-play-services-auth-api-phone-18.0.1\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\adria\.gradle\caches\transforms-3\661f963381eb53c6cea0a92b5aed8fdd\transformed\jetified-play-services-auth-api-phone-18.0.1\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-identity:17.0.0] C:\Users\adria\.gradle\caches\transforms-3\fcc52f610fff961df0ae79750458aee5\transformed\jetified-play-services-identity-17.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-identity:17.0.0] C:\Users\adria\.gradle\caches\transforms-3\fcc52f610fff961df0ae79750458aee5\transformed\jetified-play-services-identity-17.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\adria\.gradle\caches\transforms-3\03999a7c2e7ad5cc9d51e8813344d1ae\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\adria\.gradle\caches\transforms-3\03999a7c2e7ad5cc9d51e8813344d1ae\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth-base:18.0.1] C:\Users\adria\.gradle\caches\transforms-3\acbed7d481c2b99e9b41b58875afe33a\transformed\jetified-play-services-auth-base-18.0.1\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-base:18.0.1] C:\Users\adria\.gradle\caches\transforms-3\acbed7d481c2b99e9b41b58875afe33a\transformed\jetified-play-services-auth-base-18.0.1\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\adria\.gradle\caches\transforms-3\7c741d4936f86c00542d609dae4f68c7\transformed\jetified-firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
@@ -208,32 +193,30 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\adr
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\adria\.gradle\caches\transforms-3\8129b238d4d069661aca07bff47ad65b\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\adria\.gradle\caches\transforms-3\f95b31beb5b7f2eb055a97bf2e6fcf0f\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\adria\.gradle\caches\transforms-3\f95b31beb5b7f2eb055a97bf2e6fcf0f\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
-INJECTED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\debug\AndroidManifest.xml
-INJECTED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\debug\AndroidManifest.xml
+INJECTED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\debug\AndroidManifest.xml
+INJECTED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\debug\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\main\AndroidManifest.xml
-		INJECTED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\debug\AndroidManifest.xml
+		INJECTED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\debug\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\main\AndroidManifest.xml
-		INJECTED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\debug\AndroidManifest.xml
+		INJECTED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\debug\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\debug\AndroidManifest.xml:7:5-66
-MERGED from [:google_sign_in_android] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\google_sign_in_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-67
-MERGED from [:google_sign_in_android] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\google_sign_in_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-67
+ADDED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\debug\AndroidManifest.xml:7:5-66
+MERGED from [:google_sign_in_android] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\google_sign_in_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-67
+MERGED from [:google_sign_in_android] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\google_sign_in_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-67
 MERGED from [com.google.firebase:firebase-auth:21.0.7] C:\Users\adria\.gradle\caches\transforms-3\6b415a3bc2b441250bf51af87084b635\transformed\jetified-firebase-auth-21.0.7\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-auth:21.0.7] C:\Users\adria\.gradle\caches\transforms-3\6b415a3bc2b441250bf51af87084b635\transformed\jetified-firebase-auth-21.0.7\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.2.2] C:\Users\adria\.gradle\caches\transforms-3\63a55b2d265d667c75a69a4a5e2e28ed\transformed\jetified-firebase-firestore-24.2.2\AndroidManifest.xml:14:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.2.2] C:\Users\adria\.gradle\caches\transforms-3\63a55b2d265d667c75a69a4a5e2e28ed\transformed\jetified-firebase-firestore-24.2.2\AndroidManifest.xml:14:5-67
-MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\adria\.gradle\caches\transforms-3\03999a7c2e7ad5cc9d51e8813344d1ae\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\adria\.gradle\caches\transforms-3\03999a7c2e7ad5cc9d51e8813344d1ae\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\android\app\src\debug\AndroidManifest.xml:7:22-64
+		ADDED from D:\1utec\ProyectoLTI\pfltibit\pfltibit\android\app\src\debug\AndroidManifest.xml:7:22-64
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [:firebase_auth] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
-MERGED from [:cloud_firestore] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
-MERGED from [:cloud_firestore] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
-MERGED from [:firebase_core] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
-MERGED from [:firebase_core] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+ADDED from [:firebase_auth] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+MERGED from [:cloud_firestore] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+MERGED from [:cloud_firestore] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+MERGED from [:firebase_core] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+MERGED from [:firebase_core] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
 MERGED from [com.google.firebase:firebase-auth:21.0.7] C:\Users\adria\.gradle\caches\transforms-3\6b415a3bc2b441250bf51af87084b635\transformed\jetified-firebase-auth-21.0.7\AndroidManifest.xml:64:9-70:19
 MERGED from [com.google.firebase:firebase-auth:21.0.7] C:\Users\adria\.gradle\caches\transforms-3\6b415a3bc2b441250bf51af87084b635\transformed\jetified-firebase-auth-21.0.7\AndroidManifest.xml:64:9-70:19
 MERGED from [com.google.firebase:firebase-firestore:24.2.2] C:\Users\adria\.gradle\caches\transforms-3\63a55b2d265d667c75a69a4a5e2e28ed\transformed\jetified-firebase-firestore-24.2.2\AndroidManifest.xml:17:9-23:19
@@ -247,31 +230,25 @@ MERGED from [com.google.firebase:firebase-common:20.1.1] C:\Users\adria\.gradle\
 	android:directBootAware
 		ADDED from [com.google.firebase:firebase-common:20.1.1] C:\Users\adria\.gradle\caches\transforms-3\fccaa6a289edc53f66333a729d5bb147\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:35:13-43
 	android:name
-		ADDED from [:firebase_auth] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
+		ADDED from [:firebase_auth] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar
-ADDED from [:firebase_auth] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+ADDED from [:firebase_auth] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 	android:value
-		ADDED from [:firebase_auth] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+		ADDED from [:firebase_auth] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 	android:name
-		ADDED from [:firebase_auth] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+		ADDED from [:firebase_auth] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar
-ADDED from [:cloud_firestore] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+ADDED from [:cloud_firestore] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 	android:value
-		ADDED from [:cloud_firestore] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+		ADDED from [:cloud_firestore] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 	android:name
-		ADDED from [:cloud_firestore] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-134
+		ADDED from [:cloud_firestore] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-134
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar
-ADDED from [:firebase_core] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+ADDED from [:firebase_core] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 	android:value
-		ADDED from [:firebase_core] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+		ADDED from [:firebase_core] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 	android:name
-		ADDED from [:firebase_core] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
-meta-data#com.google.android.gms.wallet.api.enabled
-ADDED from [:pay_android] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\pay_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-16:36
-	android:value
-		ADDED from [:pay_android] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\pay_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-33
-	android:name
-		ADDED from [:pay_android] D:\1utec\ProyectoLTI\pfltibit\PFLTI-BIT\build\pay_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-69
+		ADDED from [:firebase_core] D:\1utec\ProyectoLTI\pfltibit\pfltibit\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\adria\.gradle\caches\transforms-3\542a859793ec57d6a4d40865c7efc6d9\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
 	android:required
@@ -288,8 +265,6 @@ uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:21.0.7] C:\Users\adria\.gradle\caches\transforms-3\6b415a3bc2b441250bf51af87084b635\transformed\jetified-firebase-auth-21.0.7\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.2.2] C:\Users\adria\.gradle\caches\transforms-3\63a55b2d265d667c75a69a4a5e2e28ed\transformed\jetified-firebase-firestore-24.2.2\AndroidManifest.xml:13:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.2.2] C:\Users\adria\.gradle\caches\transforms-3\63a55b2d265d667c75a69a4a5e2e28ed\transformed\jetified-firebase-firestore-24.2.2\AndroidManifest.xml:13:5-79
-MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\adria\.gradle\caches\transforms-3\03999a7c2e7ad5cc9d51e8813344d1ae\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
-MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\adria\.gradle\caches\transforms-3\03999a7c2e7ad5cc9d51e8813344d1ae\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
 MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\adria\.gradle\caches\transforms-3\6bd2ae4dd04c2b64a50f7e9188ad8e3d\transformed\jetified-grpc-android-1.44.1\AndroidManifest.xml:9:5-79
 MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\adria\.gradle\caches\transforms-3\6bd2ae4dd04c2b64a50f7e9188ad8e3d\transformed\jetified-grpc-android-1.44.1\AndroidManifest.xml:9:5-79
 	android:name
@@ -386,18 +361,6 @@ ADDED from [com.google.android.gms:play-services-auth:20.0.1] C:\Users\adria\.gr
 		ADDED from [com.google.android.gms:play-services-auth:20.0.1] C:\Users\adria\.gradle\caches\transforms-3\66e089c069618d46ecbcfc30035e5ab3\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:36:13-107
 	android:name
 		ADDED from [com.google.android.gms:play-services-auth:20.0.1] C:\Users\adria\.gradle\caches\transforms-3\66e089c069618d46ecbcfc30035e5ab3\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:34:13-89
-uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\adria\.gradle\caches\transforms-3\03999a7c2e7ad5cc9d51e8813344d1ae\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
-	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\adria\.gradle\caches\transforms-3\03999a7c2e7ad5cc9d51e8813344d1ae\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
-	android:required
-		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\adria\.gradle\caches\transforms-3\03999a7c2e7ad5cc9d51e8813344d1ae\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
-uses-library#org.apache.http.legacy
-ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\adria\.gradle\caches\transforms-3\03999a7c2e7ad5cc9d51e8813344d1ae\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
-	android:required
-		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\adria\.gradle\caches\transforms-3\03999a7c2e7ad5cc9d51e8813344d1ae\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
-	android:name
-		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\adria\.gradle\caches\transforms-3\03999a7c2e7ad5cc9d51e8813344d1ae\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\adria\.gradle\caches\transforms-3\19fea4fb28dedd992824e13cc158e7a1\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
 	android:exported
