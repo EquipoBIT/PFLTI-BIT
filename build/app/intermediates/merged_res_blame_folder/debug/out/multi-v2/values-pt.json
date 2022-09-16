@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\1utec\\ProyectoLTI\\pfltibit\\PFLTI-BIT\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt\\values-pt.xml",
+            "outputFile": "D:\\1utec\\ProyectoLTI\\pfltibit\\pfltibit\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt\\values-pt.xml",
             "map": [
                 {
                     "source": "C:\\Users\\adria\\.gradle\\caches\\transforms-3\\38e30c664341fe5bfcc1d9de04582443\\transformed\\browser-1.4.0\\res\\values-pt\\values-pt.xml",
