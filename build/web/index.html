@@ -76,7 +76,7 @@
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
     const auth = getAuth(app);
-    const provider = GoogleAuthProvider(app);
+    const provider = new GoogleAuthProvider(app);
   </script>  <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
