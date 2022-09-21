@@ -1,4 +1,4 @@
-name: Firebase-Dev
+name: Firebase-Test
 on:
   push:
     branches:
