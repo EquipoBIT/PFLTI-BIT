@@ -1,0 +1,21 @@
+name: Firebase-Dev
+on:
+  push:
+    branches:
+      [ dev ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Firebase deploy hosting
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PFLTI_DEV }}'
+          channelId: live
+          projectId: pflti-dev
