@@ -10,3 +10,5 @@ export 'edt/base_edt_repository.dart';
 export 'edt/edt_repository.dart';
 export 'usuario/base_usuario_repository.dart';
 export 'usuario/usuario_repository.dart';
+export 'terms/base_terms_repository.dart';
+export 'terms/terms_repository.dart';

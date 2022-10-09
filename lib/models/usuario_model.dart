@@ -20,7 +20,7 @@ class Usuario extends Equatable {
     this.uUrlFoto = '',
     this.uPerfil = 'estudiante',
     this.uActivo = true,
-    this.uAceptoTerminos = true,
+    this.uAceptoTerminos = false,
   });
 
   Usuario copyWith({

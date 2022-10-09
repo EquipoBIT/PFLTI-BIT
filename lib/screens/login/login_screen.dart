@@ -21,6 +21,7 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print(BlocProvider.of<AuthBloc>(context).state.status);
     return BlocListener<AuthBloc, AuthState>(
         listener: (context, state) {
           debugPrint('Login screen Auth Listener');
@@ -32,7 +33,14 @@ class LoginScreen extends StatelessWidget {
                 ModalRoute.withName('/login'),
               ),
             );
-          } else if (state.status == AuthStatus.authenticated) {
+          } else if (state.status == AuthStatus.authenticated &&
+              state.user!.uAceptoTerminos == true) {
+            Timer(
+              const Duration(seconds: 1),
+              () => Navigator.of(context).pushNamed(HomeScreen.routeName),
+            );
+          } else if (state.status == AuthStatus.authenticated &&
+              state.user!.uAceptoTerminos == false) {
             Timer(
               const Duration(seconds: 1),
               () => Navigator.of(context).pushNamed(TermsScreen.routeName),
