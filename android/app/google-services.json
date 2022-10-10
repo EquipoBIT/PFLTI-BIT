@@ -53,6 +53,13 @@
             {
               "client_id": "434596075479-qfi9nr4ss21mi5k2pn9ar5uegsf7ddqm.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "434596075479-j4gqoqrmce1iovkdppqbabp8pac8lf6t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.pfltibit"
+              }
             }
           ]
         }
