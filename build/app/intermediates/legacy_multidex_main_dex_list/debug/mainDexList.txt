@@ -136,6 +136,7 @@ com/google/android/gms/auth/api/accounttransfer/AuthenticatorTransferCompletionS
 com/google/android/gms/auth/api/credentials/Credential.class
 com/google/android/gms/auth/api/credentials/CredentialPickerConfig$Prompt.class
 com/google/android/gms/auth/api/phone/SmsCodeAutofillClient$PermissionState.class
+com/google/android/gms/cloudmessaging/CloudMessage$MessagePriority.class
 com/google/android/gms/common/SignInButton$ButtonSize.class
 com/google/android/gms/common/SignInButton$ColorScheme.class
 com/google/android/gms/common/annotation/KeepForSdk.class
@@ -157,6 +158,7 @@ com/google/android/gms/common/internal/zak.class
 com/google/android/gms/common/util/DynamiteApi.class
 com/google/android/gms/common/util/Strings.class
 com/google/android/gms/internal/auth/zzbv.class
+com/google/android/gms/stats/CodePackage.class
 com/google/common/annotations/Beta.class
 com/google/common/annotations/GwtCompatible.class
 com/google/common/annotations/GwtIncompatible.class
@@ -204,8 +206,10 @@ com/google/firebase/firestore/ServerTimestamp.class
 com/google/firebase/firestore/ThrowOnExtraProperties.class
 com/google/firebase/firestore/util/AsyncQueue.class
 com/google/firebase/firestore/util/Preconditions.class
+com/google/firebase/iid/FirebaseInstanceId.class
 com/google/firebase/platforminfo/AutoValue_LibraryVersion.class
 com/google/firebase/platforminfo/LibraryVersion.class
+com/google/firebase/storage/StorageException$ErrorCode.class
 com/google/gson/annotations/Expose.class
 com/google/gson/annotations/JsonAdapter.class
 com/google/gson/annotations/SerializedName.class
@@ -452,6 +456,7 @@ kotlinx/coroutines/flow/LintKt.class
 kotlinx/coroutines/scheduling/ExperimentalCoroutineDispatcher.class
 kotlinx/coroutines/test/TestCoroutineContext.class
 kotlinx/coroutines/test/TestCoroutineContextKt.class
+okhttp3/internal/annotations/EverythingIsNonNull.class
 org/checkerframework/checker/nullness/compatqual/KeyForDecl.class
 org/checkerframework/checker/nullness/compatqual/KeyForType.class
 org/checkerframework/checker/nullness/compatqual/MonotonicNonNullDecl.class

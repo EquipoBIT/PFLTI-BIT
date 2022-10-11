@@ -110,27 +110,18 @@ class AddToEnUsoNavBar extends StatelessWidget {
 
   Future<void> stopEDT(BuildContext context, String edtNombre) async {
     try {
-      final result = await FirebaseFunctions.instance
-          .httpsCallable('stopEDT2')
-          .call(<String, dynamic>{'instanceName': edtNombre});
- 
 // ¡¡¡¡¡¡¡¡¡¡¡¡¡
 // OJO HAY QUE SACAR ESTE MSG para el screen y no ponerlo en el metodo async!!!
-
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text(
               'EDT OFF! Se congela el tiempo de consumo hasta que Ud encienda nuevamente el EDT.'),
         ),
       );
-      debugPrint("result: ${result.data}");
+      HttpsCallable callable = FirebaseFunctions.instance.httpsCallable('stopEDT');
+      final resp = await callable.call(<String, dynamic>{'instanceName': edtNombre.toLowerCase()});
+      debugPrint("result: ${resp.data}");
     } on FirebaseFunctionsException catch (error) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text(
-              'ERROR EN EDT OFF!!!!'),
-        ),
-      );
       debugPrint(error.code);
       debugPrint(error.details);
       debugPrint(error.message);
@@ -145,10 +136,9 @@ class AddToEnUsoNavBar extends StatelessWidget {
               'EDT ON! Se descuenta tiempo de consumo hasta que Ud lo Detenga o se Agote el saldo.'),
         ),
       );
-      final result = await FirebaseFunctions.instance
-          .httpsCallable('startEDT2')
-          .call(<String, dynamic>{'instanceName': edtNombre});
-      debugPrint("result: ${result.data}");
+      HttpsCallable callable = FirebaseFunctions.instance.httpsCallable('startEDT');
+      final resp = await callable.call(<String, dynamic>{'instanceName': edtNombre.toLowerCase()});
+      debugPrint("result: ${resp.data}");
     } on FirebaseFunctionsException catch (error) {
       debugPrint(error.code);
       debugPrint(error.details);

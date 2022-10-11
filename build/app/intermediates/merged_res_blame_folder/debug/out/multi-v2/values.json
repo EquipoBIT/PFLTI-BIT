@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\1utec\\ProyectoLTI\\pfltibit\\pfltibit\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "D:\\1utec\\ProyectoLTI\\PFLTI-BIT\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\adria\\.gradle\\caches\\transforms-3\\542a859793ec57d6a4d40865c7efc6d9\\transformed\\jetified-window-1.0.0-beta04\\res\\values\\values.xml",
@@ -20,42 +20,6 @@
                         "endLines": "7,8,9,10,86,168,172,353,370,378",
                         "endColumns": "11,59,51,44,59,24,24,24,24,24",
                         "endOffsets": "339,399,451,496,5500,11965,12162,21855,22969,23362"
-                    }
-                },
-                {
-                    "source": "D:\\1utec\\ProyectoLTI\\pfltibit\\pfltibit\\build\\app\\generated\\res\\google-services\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,281,385,494,614,707",
-                        "endColumns": "143,81,103,108,119,92,69",
-                        "endOffsets": "194,276,380,489,609,702,772"
-                    },
-                    "to": {
-                        "startLines": "126,130,131,132,133,134,135",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "8973,9332,9414,9518,9627,9747,9840",
-                        "endColumns": "143,81,103,108,119,92,69",
-                        "endOffsets": "9112,9409,9513,9622,9742,9835,9905"
-                    }
-                },
-                {
-                    "source": "D:\\1utec\\ProyectoLTI\\pfltibit\\pfltibit\\android\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "3,17",
-                        "startColumns": "4,4",
-                        "startOffsets": "173,1021",
-                        "endLines": "10,19",
-                        "endColumns": "12,12",
-                        "endOffsets": "674,1185"
-                    },
-                    "to": {
-                        "startLines": "137,145",
-                        "startColumns": "4,4",
-                        "startOffsets": "9981,10486",
-                        "endLines": "144,147",
-                        "endColumns": "12,12",
-                        "endOffsets": "10481,10650"
                     }
                 },
                 {
@@ -95,6 +59,23 @@
                     }
                 },
                 {
+                    "source": "D:\\1utec\\ProyectoLTI\\PFLTI-BIT\\build\\app\\generated\\res\\google-services\\debug\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,281,385,494,614,707",
+                        "endColumns": "143,81,103,108,119,92,69",
+                        "endOffsets": "194,276,380,489,609,702,772"
+                    },
+                    "to": {
+                        "startLines": "126,130,131,132,133,134,135",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "8973,9332,9414,9518,9627,9747,9840",
+                        "endColumns": "143,81,103,108,119,92,69",
+                        "endOffsets": "9112,9409,9513,9622,9742,9835,9905"
+                    }
+                },
+                {
                     "source": "C:\\Users\\adria\\.gradle\\caches\\transforms-3\\19fea4fb28dedd992824e13cc158e7a1\\transformed\\jetified-play-services-base-18.0.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,33,46",
@@ -128,6 +109,25 @@
                         "startOffsets": "6434,7612",
                         "endColumns": "67,166",
                         "endOffsets": "6497,7774"
+                    }
+                },
+                {
+                    "source": "D:\\1utec\\ProyectoLTI\\PFLTI-BIT\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "3,17",
+                        "startColumns": "4,4",
+                        "startOffsets": "176,1032",
+                        "endLines": "10,19",
+                        "endColumns": "12,12",
+                        "endOffsets": "683,1198"
+                    },
+                    "to": {
+                        "startLines": "137,145",
+                        "startColumns": "4,4",
+                        "startOffsets": "9981,10486",
+                        "endLines": "144,147",
+                        "endColumns": "12,12",
+                        "endOffsets": "10481,10650"
                     }
                 }
             ]

@@ -52,11 +52,11 @@ import * as functions from "firebase-functions";
 //   response.send("EDT Started");
 // });
 
-export const startEDT = functions.https.onCall((data, context) => {
-  functions.logger.info("Start EDT", {structuredData: true});
+exports.startEDT = functions.https.onCall(async (data, context) => {
   const projectId = "pflti-bit-edts";
   const zone = "us-central1-a";
-  const instanceName = data.instanceName; // "edt001";
+  const instanceName:string = data.instanceName; // "edt001";
+  functions.logger.info(`EDT Started ${instanceName}`, {structuredData: true});
   const compute = require("@google-cloud/compute");
   async function startEDT() {
     const instancesClient = new compute.InstancesClient();
@@ -81,11 +81,11 @@ export const startEDT = functions.https.onCall((data, context) => {
   return `EDT Started ${instanceName}`;
 });
 
-export const stopEDT = functions.https.onCall((data, context) => {
-  functions.logger.info("Stop EDT", {structuredData: true});
+exports.stopEDT = functions.https.onCall(async (data, context) => {
   const projectId = "pflti-bit-edts";
   const zone = "us-central1-a";
-  const instanceName = data.instanceName; // "edt001";
+  const instanceName:string = data.instanceName; // "edt001";
+  functions.logger.info(`EDT Stoped ${instanceName}`, {structuredData: true});
   const compute = require("@google-cloud/compute");
   async function stopEDT() {
     const instancesClient = new compute.InstancesClient();
