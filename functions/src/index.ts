@@ -63,7 +63,7 @@ exports.startEDT = functions.https.onCall(async (data, context) => {
     const [instance] = await instancesClient.start({
       project: projectId,
       zone,
-      instance: instanceName.toLowerCase,
+      instance: instanceName,
     });
     let operation = instance.latestResponse;
     const operationsClient = new compute.ZoneOperationsClient();
@@ -92,7 +92,7 @@ exports.stopEDT = functions.https.onCall(async (data, context) => {
     const [instance] = await instancesClient.stop({
       project: projectId,
       zone,
-      instance: instanceName.toLowerCase,
+      instance: instanceName,
     });
     let operation = instance.latestResponse;
     const operationsClient = new compute.ZoneOperationsClient();
