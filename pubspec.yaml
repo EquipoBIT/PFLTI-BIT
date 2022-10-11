@@ -43,6 +43,9 @@ dependencies:
   mocktail: ^0.3.0
   bloc: ^8.1.0
   flutter_native_splash: ^2.2.8
+  cloud_functions: ^3.3.9
+  firebase_storage: ^10.3.11
+
 
 dev_dependencies:
   bloc_test: ^9.1.0
