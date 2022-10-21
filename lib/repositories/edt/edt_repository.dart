@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import '../../models/edt_model.dart';
 import '/repositories/edt/base_edt_repository.dart';
 
@@ -8,10 +9,24 @@ class EdtRepository extends BaseEdtRepository {
   EdtRepository({FirebaseFirestore? firebaseFirestore})
       : _firebaseFirestore = firebaseFirestore ?? FirebaseFirestore.instance;
 
-  @override
+  User? user = FirebaseAuth.instance.currentUser;
+
+  /*@override
   Stream<List<Edt>> getAllEdts() {
     return _firebaseFirestore.collection('edts').snapshots().map((snapshot) {
       return snapshot.docs.map((doc) => Edt.fromSnapshot(doc)).toList();
     });
+  }*/
+  
+  @override
+  Stream<List<Edt>> getAllEdts() {
+    return _firebaseFirestore
+        .collection('edts')
+        .where('edtEstAsigId', isEqualTo: user!.uid)
+        .snapshots()
+        .map((snapshot) {
+      return snapshot.docs.map((doc) => Edt.fromSnapshot(doc)).toList();
+    });
   }
 }
+
