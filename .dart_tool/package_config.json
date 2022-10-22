@@ -153,7 +153,7 @@
     },
     {
       "name": "cloud_functions_platform_interface",
-      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_functions_platform_interface-5.1.19",
+      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_functions_platform_interface-5.1.18",
       "packageUri": "lib/",
       "languageVersion": "2.16"
     },
@@ -285,7 +285,7 @@
     },
     {
       "name": "firebase_storage_platform_interface",
-      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage_platform_interface-4.1.19",
+      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage_platform_interface-4.1.18",
       "packageUri": "lib/",
       "languageVersion": "2.16"
     },
@@ -854,7 +854,7 @@
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2022-10-22T14:22:32.731848Z",
+  "generated": "2022-10-22T14:44:10.900876Z",
   "generator": "pub",
   "generatorVersion": "2.18.0"
 }
