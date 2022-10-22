@@ -1,7 +1,6 @@
 import 'dart:async';
 
-import 'package:pfltibit/repositories/auth/auth_repository.dart';
-import 'package:pfltibit/repositories/usuario/usuario_repository.dart';
+import 'package:pfltibit/repositories/repositories.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -34,7 +33,7 @@ class ProfileScreen extends StatelessWidget {
     return BlocListener<AuthBloc, AuthState>(
         listener: (context, state) {
           debugPrint('Profile screen Auth Listener');
-          if (state.status == AuthStatus.authenticated) {
+          if (state.status == AuthStatus.unauthenticated) {
             Timer(
               const Duration(seconds: 1),
               () => Navigator.of(context).pushNamed(LoginScreen.routeName),
@@ -52,23 +51,57 @@ class ProfileScreen extends StatelessWidget {
                 );
               }
               if (state is ProfileLoaded) {
-                return Center(
-                  child: ElevatedButton(
-                    onPressed: () {
-                      context.read<AuthRepository>().signOut();
-                    },
-                    style: ElevatedButton.styleFrom(
-                      shape: const RoundedRectangleBorder(),
-                      backgroundColor: Colors.black,
-                      fixedSize: const Size(200, 40),
+                return Column(
+                  children: [
+                    const SizedBox(height: 5),
+                    Text(
+                      'Informacion de Usuario',
+                      style: Theme.of(context).textTheme.headline3,
                     ),
-                    child: Text(
-                      'Sign Out',
-                      style: Theme.of(context).textTheme.headline4!.copyWith(
-                            color: Colors.white,
-                          ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        const SizedBox(height: 5),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Image.network(state.user.uUrlFoto)
+                          ],
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const SizedBox(height: 5),
+                            Text(state.user.uNombreCompleto),
+                            const SizedBox(height: 5),
+                            Text(state.user.uCorreo),
+                            const SizedBox(height: 5),
+                            Text(state.user.uPerfil),
+                            const SizedBox(height: 5),
+                          ],
+                        ),
+                      ],
                     ),
-                  ),
+                    Center(
+                      child: ElevatedButton(
+                        onPressed: () {
+                          context.read<AuthRepository>().signOut();
+                        },
+                        style: ElevatedButton.styleFrom(
+                          shape: const RoundedRectangleBorder(),
+                          backgroundColor: Colors.black,
+                          fixedSize: const Size(200, 40),
+                        ),
+                        child: Text(
+                          'Sign Out',
+                          style:
+                              Theme.of(context).textTheme.headline4!.copyWith(
+                                    color: Colors.white,
+                                  ),
+                        ),
+                      ),
+                    ),
+                  ],
                 );
               }
               if (state is ProfileUnauthenticated) {

@@ -4,3 +4,4 @@ export 'grupo/grupo_bloc.dart';
 export 'profile/profile_bloc.dart';
 export 'ucurricular/ucurricular_bloc.dart';
 export 'enuso/enuso_bloc.dart';
+export 'terms/terms_bloc.dart';
