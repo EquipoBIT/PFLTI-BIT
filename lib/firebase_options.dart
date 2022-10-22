@@ -23,7 +23,10 @@ class DefaultFirebaseOptions {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        return ios;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for iOS - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for macos - '
@@ -47,31 +50,19 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCEA9yfuqOGSVUzdhRcq83cBMA1gCmCsfY',
-    appId: '1:434596075479:web:58ca10f3fa597a82b65d92',
-    messagingSenderId: '434596075479',
-    projectId: 'pflti-dev',
-    authDomain: 'pflti-dev.firebaseapp.com',
-    storageBucket: 'pflti-dev.appspot.com',
-    measurementId: 'G-DSHPF4MQYV',
+    apiKey: "AIzaSyCL2s4Dutu5ZewQ8y9RILKdCJRGpJbl6mk",
+    authDomain: "pflti-test.firebaseapp.com",
+    projectId: "pflti-test",
+    storageBucket: "pflti-test.appspot.com",
+    messagingSenderId: "175160080483",
+    appId: "1:175160080483:web:4f5eb1d6a5ece15c116056",
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAhGFm4maaDuCVoREykgopteH38aSXG40U',
-    appId: '1:434596075479:android:34309e11c723ce0bb65d92',
-    messagingSenderId: '434596075479',
-    projectId: 'pflti-dev',
-    storageBucket: 'pflti-dev.appspot.com',
-  );
-
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAAoeZD-yX9NAzny3_dJZzlf7OHnud8pkI',
-    appId: '1:434596075479:ios:985a56cb311c9c31b65d92',
-    messagingSenderId: '434596075479',
-    projectId: 'pflti-dev',
-    storageBucket: 'pflti-dev.appspot.com',
-    androidClientId: '434596075479-31mfi6vp6oglp9fjbj2hm8sc2e7hrroq.apps.googleusercontent.com',
-    iosClientId: '434596075479-j4gqoqrmce1iovkdppqbabp8pac8lf6t.apps.googleusercontent.com',
-    iosBundleId: 'com.example.pfltibit',
+    apiKey: 'AIzaSyDZgUqvEmWEW7pLyDWCN0mTWhiFT7ywKis',
+    appId: '1:175160080483:android:c3b97e0006470d4c116056',
+    messagingSenderId: '175160080483',
+    projectId: 'pflti-test',
+    storageBucket: 'pflti-test.appspot.com',
   );
 }
