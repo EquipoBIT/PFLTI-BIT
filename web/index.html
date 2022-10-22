@@ -22,6 +22,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="pfltibit">
+  <meta name="google-signin-client_id" content="434596075479-qfi9nr4ss21mi5k2pn9ar5uegsf7ddqm.apps.googleusercontent.com">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
@@ -32,7 +33,7 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = null;
+    var serviceWorkerVersion = '1726774234';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer=""></script>
@@ -40,7 +41,10 @@
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
   <script src="splash/splash.js"></script>
 </head>
-<body>  <picture id="splash-branding">
+<body>  
+   
+  
+  <picture id="splash-branding">
     <source srcset="splash/img/branding-1x.png 1x, splash/img/branding-2x.png 2x, splash/img/branding-3x.png 3x, splash/img/branding-4x.png 4x" media="(prefers-color-scheme: light)">
     <source srcset="splash/img/branding-dark-1x.png 1x, splash/img/branding-dark-2x.png 2x, splash/img/branding-dark-3x.png 3x, splash/img/branding-dark-4x.png 4x" media="(prefers-color-scheme: dark)">
     <img class="bottom" aria-hidden="true" src="splash/img/branding-1x.png" alt="">
@@ -69,24 +73,25 @@
     // Import the functions you need from the SDKs you need
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-analytics.js";
+    import { getFunctions } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-functions.js";
     // TODO: Add SDKs for Firebase products that you want to use
     // https://firebase.google.com/docs/web/setup#available-libraries
   
     // Your web app's Firebase configuration
     // For Firebase JS SDK v7.20.0 and later, measurementId is optional
     const firebaseConfig = {
-      apiKey: "AIzaSyCEA9yfuqOGSVUzdhRcq83cBMA1gCmCsfY",
-      authDomain: "pflti-dev.firebaseapp.com",
-      projectId: "pflti-dev",
-      storageBucket: "pflti-dev.appspot.com",
-      messagingSenderId: "434596075479",
-      appId: "1:434596075479:web:58ca10f3fa597a82b65d92",
-      measurementId: "G-DSHPF4MQYV"
+      apiKey: "AIzaSyCL2s4Dutu5ZewQ8y9RILKdCJRGpJbl6mk",
+      authDomain: "pflti-test.firebaseapp.com",
+      projectId: "pflti-test",
+      storageBucket: "pflti-test.appspot.com",
+      messagingSenderId: "175160080483",
+      appId: "1:175160080483:web:4f5eb1d6a5ece15c116056"
     };
   
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
+    const functions = getFunctions(app);
   </script>  <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js

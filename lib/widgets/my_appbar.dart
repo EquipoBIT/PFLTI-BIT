@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class MyAppBar extends StatelessWidget with PreferredSizeWidget {
@@ -12,6 +13,9 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
+    User? user = FirebaseAuth.instance.currentUser;
+    var userImage = user?.photoURL;
+    var nonulluserImage = userImage ?? 'assets/images/logo_bit';
     return AppBar(
       backgroundColor: Colors.transparent,
       elevation: 0,
@@ -29,6 +33,18 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
       ),
       iconTheme: IconThemeData(color: Colors.black),
       actions: [
+        IconButton(
+          icon: ClipRRect(
+            borderRadius: BorderRadius.circular(10.0),
+            child: Image.network(nonulluserImage),
+          ),
+          onPressed: () {
+            Navigator.pushNamed(
+              context,
+              '/profile',
+            );
+          },
+        ),
         IconButton(
           icon: Icon(Icons.handyman),
           onPressed: () {
