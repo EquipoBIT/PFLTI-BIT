@@ -118,8 +118,10 @@ class AddToEnUsoNavBar extends StatelessWidget {
               'EDT OFF! Se congela el tiempo de consumo hasta que Ud encienda nuevamente el EDT.'),
         ),
       );
-      HttpsCallable callable = FirebaseFunctions.instance.httpsCallable('stopEDT');
-      final resp = await callable.call(<String, dynamic>{'instanceName': edtNombre.toLowerCase()});
+      HttpsCallable callable =
+          FirebaseFunctions.instance.httpsCallable('stopEDT');
+      final resp = await callable
+          .call(<String, dynamic>{'instanceName': edtNombre.toLowerCase()});
       debugPrint("result: ${resp.data}");
     } on FirebaseFunctionsException catch (error) {
       debugPrint(error.code);
@@ -136,8 +138,10 @@ class AddToEnUsoNavBar extends StatelessWidget {
               'EDT ON! Se descuenta tiempo de consumo hasta que Ud lo Detenga o se Agote el saldo.'),
         ),
       );
-      HttpsCallable callable = FirebaseFunctions.instance.httpsCallable('startEDT');
-      final resp = await callable.call(<String, dynamic>{'instanceName': edtNombre.toLowerCase()});
+      HttpsCallable callable =
+          FirebaseFunctions.instance.httpsCallable('startEDT');
+      final resp = await callable
+          .call(<String, dynamic>{'instanceName': edtNombre.toLowerCase()});
       debugPrint("result: ${resp.data}");
     } on FirebaseFunctionsException catch (error) {
       debugPrint(error.code);
