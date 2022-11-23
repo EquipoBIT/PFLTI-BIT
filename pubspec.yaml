@@ -45,6 +45,8 @@ dependencies:
   flutter_native_splash: ^2.2.8
   cloud_functions: ^3.3.9
   firebase_storage: ^10.3.11
+  syncfusion_flutter_charts: ^20.3.52
+  url_launcher: ^6.1.6
 
 
 dev_dependencies:
