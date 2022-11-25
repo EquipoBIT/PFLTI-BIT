@@ -19,6 +19,8 @@ class AppRouter {
         return EnUsoScreen.route();
       case ProfileScreen.routeName:
         return ProfileScreen.route();
+      case StaticsScreen.routeName:
+        return StaticsScreen.route();
       case LoginScreen.routeName:
         return LoginScreen.route();
       case TermsScreen.routeName:
