@@ -96,7 +96,6 @@ exports.startEDT = functions.https.onCall(async (data, context) => {
       });
     }
     console.log(`EDT Started ${instanceName}`);
-    // return `edtOn => edtActivo set to true for EDT ${instanceName}`;
   }
 });
 
@@ -164,7 +163,8 @@ exports.saldoTiempoEDT = functions.pubsub
             {edtSaldoTiempo: saldo});
         // si nuevo saldo es 0 entocnes para EDT
         if (saldo == 0) {
-          stop2EDT(doc.data().edtNombre.toUpperCase());
+          await stop2EDT(doc.data().edtNombre.toLowerCase());
+          console.log(`stop2EDT sin toLowerCase ${doc.data().edtNombre}`);
           doc.ref.update({edtActivo: false});
         }
       });
@@ -197,6 +197,8 @@ async function minutosConsumidosDesdeEdtOn(doc: any): Promise<number> {
     const usoOff2 = Timestamp.fromDate(new Date());
     usoMinutos2 = Math.floor(
         (usoOff2.toMillis() - doc2.data().usoOn.toMillis()) / 1000 / 60);
+    doc2.ref.update(
+        {usoMinutos: usoMinutos2, usoOff: usoOff2});
   });
   return usoMinutos2;
 }
