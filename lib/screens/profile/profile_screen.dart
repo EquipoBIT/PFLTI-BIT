@@ -93,7 +93,7 @@ class ProfileScreen extends StatelessWidget {
                           fixedSize: const Size(200, 40),
                         ),
                         child: Text(
-                          'Sign Out',
+                          'Salir',
                           style:
                               Theme.of(context).textTheme.headline4!.copyWith(
                                     color: Colors.white,
