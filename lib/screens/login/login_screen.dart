@@ -110,7 +110,7 @@ class GoogleLoginButton extends StatelessWidget {
     return ElevatedButton.icon(
       key: const Key('loginForm_googleLogin_raisedButton'),
       label: const Text(
-        'LOG IN WITH UTEC',
+        'Ingresar con correo UTEC',
         style: TextStyle(color: Colors.white),
       ),
       style: ElevatedButton.styleFrom(
