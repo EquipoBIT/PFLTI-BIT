@@ -1,3 +1,19 @@
+# Flutter/Dart/Pub related
+**/doc/api/
+.dart_tool/
+.flutter-plugins
+.packages
+.pub-cache/
+.pub/
+/build/
+
+# ignorar directorios creados por flutter deploy
+/android/
+/linux/
+/windows/
+/macos/
+/web/
+
 # Logs
 logs
 *.log

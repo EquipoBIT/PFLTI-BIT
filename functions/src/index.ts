@@ -2,7 +2,8 @@
 import {Timestamp} from "firebase-admin/firestore";
 import * as functions from "firebase-functions";
 const projectId = "pflti-bit-edts";
-const zone = "us-central1-a";
+// const zone = "us-central1-a";
+const zone = "southamerica-east1-b";
 const compute = require("@google-cloud/compute");
 const admin = require("firebase-admin");
 let saldo = 0;

@@ -11,6 +11,8 @@ MERGED from [:cloud_firestore] D:\1utec\ProyectoLTI\PFLTI-BIT\build\cloud_firest
 MERGED from [:cloud_firestore] D:\1utec\ProyectoLTI\PFLTI-BIT\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
 MERGED from [:firebase_core] D:\1utec\ProyectoLTI\PFLTI-BIT\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
 MERGED from [:firebase_core] D:\1utec\ProyectoLTI\PFLTI-BIT\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
+MERGED from [:url_launcher_android] D:\1utec\ProyectoLTI\PFLTI-BIT\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-14:19
+MERGED from [:url_launcher_android] D:\1utec\ProyectoLTI\PFLTI-BIT\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-14:19
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\adria\.gradle\caches\transforms-3\542a859793ec57d6a4d40865c7efc6d9\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\adria\.gradle\caches\transforms-3\542a859793ec57d6a4d40865c7efc6d9\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
 MERGED from [com.google.firebase:firebase-functions:20.1.0] C:\Users\adria\.gradle\caches\transforms-3\9e6a6bcaa99b5df6e9c16f136d3e06b2\transformed\jetified-firebase-functions-20.1.0\AndroidManifest.xml:14:5-22:19
@@ -68,6 +70,7 @@ MERGED from [:firebase_auth] D:\1utec\ProyectoLTI\PFLTI-BIT\build\firebase_auth\
 MERGED from [:firebase_storage] D:\1utec\ProyectoLTI\PFLTI-BIT\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [:cloud_firestore] D:\1utec\ProyectoLTI\PFLTI-BIT\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [:firebase_core] D:\1utec\ProyectoLTI\PFLTI-BIT\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
+MERGED from [:url_launcher_android] D:\1utec\ProyectoLTI\PFLTI-BIT\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-16:12
 MERGED from [:path_provider_android] D:\1utec\ProyectoLTI\PFLTI-BIT\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:google_sign_in_android] D:\1utec\ProyectoLTI\PFLTI-BIT\build\google_sign_in_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:flutter_native_splash] D:\1utec\ProyectoLTI\PFLTI-BIT\build\flutter_native_splash\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
@@ -150,6 +153,8 @@ MERGED from [:cloud_firestore] D:\1utec\ProyectoLTI\PFLTI-BIT\build\cloud_firest
 MERGED from [:cloud_firestore] D:\1utec\ProyectoLTI\PFLTI-BIT\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_core] D:\1utec\ProyectoLTI\PFLTI-BIT\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_core] D:\1utec\ProyectoLTI\PFLTI-BIT\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:url_launcher_android] D:\1utec\ProyectoLTI\PFLTI-BIT\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:url_launcher_android] D:\1utec\ProyectoLTI\PFLTI-BIT\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:path_provider_android] D:\1utec\ProyectoLTI\PFLTI-BIT\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:path_provider_android] D:\1utec\ProyectoLTI\PFLTI-BIT\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:google_sign_in_android] D:\1utec\ProyectoLTI\PFLTI-BIT\build\google_sign_in_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
@@ -342,6 +347,14 @@ ADDED from [:firebase_core] D:\1utec\ProyectoLTI\PFLTI-BIT\build\firebase_core\i
 		ADDED from [:firebase_core] D:\1utec\ProyectoLTI\PFLTI-BIT\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 	android:name
 		ADDED from [:firebase_core] D:\1utec\ProyectoLTI\PFLTI-BIT\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+activity#io.flutter.plugins.urllauncher.WebViewActivity
+ADDED from [:url_launcher_android] D:\1utec\ProyectoLTI\PFLTI-BIT\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-13:74
+	android:exported
+		ADDED from [:url_launcher_android] D:\1utec\ProyectoLTI\PFLTI-BIT\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+	android:theme
+		ADDED from [:url_launcher_android] D:\1utec\ProyectoLTI\PFLTI-BIT\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-71
+	android:name
+		ADDED from [:url_launcher_android] D:\1utec\ProyectoLTI\PFLTI-BIT\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\adria\.gradle\caches\transforms-3\542a859793ec57d6a4d40865c7efc6d9\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
 	android:required
