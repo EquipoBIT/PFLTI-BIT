@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../../blocs/blocs.dart';
 import '../../repositories/repositories.dart';
 import '../screens.dart';
@@ -28,9 +29,11 @@ class TermsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Uri terms = Uri.https('tinyurl.com', '/bittestpdf');
     return BlocListener<AuthBloc, AuthState>(
         listener: (context, state) {
-          debugPrint('Terms screen Auth Listener');
+          debugPrint(
+              'Escucha de autenticacion de la paginas de terminos y condiciones');
           if (state.status == AuthStatus.unauthenticated) {
             Timer(
               const Duration(seconds: 1),
@@ -171,10 +174,37 @@ class TermsScreen extends StatelessWidget {
                           ),
                           const SizedBox(height: 16),
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Tooltip(
+                                message:
+                                    'Ver terminos y condiciones en un PDF externo',
+                                child: TextButton.icon(
+                                  style: TextButton.styleFrom(
+                                    textStyle: const TextStyle(fontSize: 20),
+                                  ),
+                                  onPressed: () async {
+                                    await launchUrl(terms);
+                                  },
+                                  icon: Icon(Icons.link),
+                                  label: const Text(
+                                    "Ver en PDF",
+                                    style: TextStyle(
+                                        fontSize: 14,
+                                        color: Colors.blue,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 16),
+                          Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
                                 TextButton(
-                                    child: const Text('Acepto'),
+                                    child: const Text('Acepto',
+                                        style: TextStyle(fontSize: 16)),
                                     onPressed: () {
                                       FirebaseFirestore.instance
                                           .collection('usuarios')
@@ -188,7 +218,8 @@ class TermsScreen extends StatelessWidget {
                                       );
                                     }),
                                 TextButton(
-                                    child: const Text('No acepto'),
+                                    child: const Text('No acepto',
+                                        style: TextStyle(fontSize: 16)),
                                     onPressed: () {
                                       Navigator.pushNamed(context, '/login');
                                       context.read<AuthRepository>().signOut();
@@ -200,7 +231,11 @@ class TermsScreen extends StatelessWidget {
                   ),
                 );
               } else {
-                return const Text('Something went wrong');
+                return Flexible(
+                    child: const Text(
+                  'Algo salio mal, si el problema persiste ponte en contacto con el soporte tecnico',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                ));
               }
             },
           ),

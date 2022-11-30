@@ -16,7 +16,8 @@ class GrillaScreen extends StatelessWidget {
 
   final UCurricular ucurricular;
 
-  const GrillaScreen({super.key, 
+  const GrillaScreen({
+    super.key,
     required this.ucurricular,
   });
 
@@ -56,7 +57,11 @@ class GrillaScreen extends StatelessWidget {
               },
             );
           } else {
-            return const Text('Something went wrong');
+            return Flexible(
+                child: const Text(
+              'Algo salio mal, si el problema persiste ponte en contacto con el soporte tecnico',
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+            ));
           }
         },
       ),

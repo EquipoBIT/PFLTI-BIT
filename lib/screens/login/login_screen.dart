@@ -24,7 +24,6 @@ class LoginScreen extends StatelessWidget {
     print(BlocProvider.of<AuthBloc>(context).state.status);
     return BlocListener<AuthBloc, AuthState>(
         listener: (context, state) {
-          debugPrint('Login screen Auth Listener');
           if (state.status == AuthStatus.unauthenticated) {
             Timer(
               const Duration(seconds: 1),
@@ -110,7 +109,7 @@ class GoogleLoginButton extends StatelessWidget {
     return ElevatedButton.icon(
       key: const Key('loginForm_googleLogin_raisedButton'),
       label: const Text(
-        'Ingresar con correo UTEC',
+        'Iniciar sesión con correo UTEC',
         style: TextStyle(color: Colors.white),
       ),
       style: ElevatedButton.styleFrom(

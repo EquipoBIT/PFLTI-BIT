@@ -63,7 +63,11 @@ class GrillaEnUso extends StatelessWidget {
             ),
           );
         }
-        return const Text('Something went wrong!');
+        return Flexible(
+            child: const Text(
+          'Algo salio mal, si el problema persiste ponte en contacto con el soporte tecnico',
+          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+        ));
       },
     );
   }
