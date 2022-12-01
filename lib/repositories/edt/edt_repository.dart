@@ -11,13 +11,6 @@ class EdtRepository extends BaseEdtRepository {
 
   User? user = FirebaseAuth.instance.currentUser;
 
-  /*@override
-  Stream<List<Edt>> getAllEdts() {
-    return _firebaseFirestore.collection('edts').snapshots().map((snapshot) {
-      return snapshot.docs.map((doc) => Edt.fromSnapshot(doc)).toList();
-    });
-  }*/
-  
   @override
   Stream<List<Edt>> getAllEdts() {
     return _firebaseFirestore
@@ -29,4 +22,3 @@ class EdtRepository extends BaseEdtRepository {
     });
   }
 }
-

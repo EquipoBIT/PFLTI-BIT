@@ -38,20 +38,31 @@ class HomeScreen extends StatelessWidget {
                       );
                     }
                     if (state is UCurricularLoaded) {
-                      return CarouselSlider(
-                        options: CarouselOptions(
-                          aspectRatio: 1.5,
-                          viewportFraction: 0.9,
-                          enlargeCenterPage: true,
-                          enlargeStrategy: CenterPageEnlargeStrategy.height,
+                      return Container(
+                        constraints: new BoxConstraints(
+                          maxHeight: 320,
+                          maxWidth: 800,
                         ),
-                        items: state.ucurriculares
-                            .map((ucurricular) =>
-                                InfoCarouselCard(ucurricular: ucurricular))
-                            .toList(),
+                        child: CarouselSlider(
+                          options: CarouselOptions(
+                            height: 320,
+                            aspectRatio: 1.5,
+                            viewportFraction: 1,
+                            enlargeCenterPage: true,
+                          ),
+                          items: state.ucurriculares
+                              .map((ucurricular) =>
+                                  InfoCarouselCard(ucurricular: ucurricular))
+                              .toList(),
+                        ),
                       );
                     } else {
-                      return const Text('Something went wrong.');
+                      return Flexible(
+                          child: const Text(
+                        'Algo salio mal, si el problema persiste ponte en contacto con el soporte tecnico',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold),
+                      ));
                     }
                   },
                 ),
@@ -68,7 +79,12 @@ class HomeScreen extends StatelessWidget {
                         edts: state.edts.toList(),
                       );
                     } else {
-                      return const Text('Something went wrong.');
+                      return Flexible(
+                          child: const Text(
+                        'Algo salio mal, si el problema persiste ponte en contacto con el soporte tecnico',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold),
+                      ));
                     }
                   },
                 ),

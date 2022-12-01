@@ -16,7 +16,7 @@ class AuthRepository extends BaseAuthRepository {
   })  : _firebaseAuth = firebaseAuth ?? auth.FirebaseAuth.instance,
         _googleSignIn = googleSignIn ??
             GoogleSignIn.standard(
-              scopes: ['email'], // <<<<< VERIFICAR !!!!
+              scopes: ['email'],
             ),
         _userRepository = userRepository;
 
@@ -41,8 +41,7 @@ class AuthRepository extends BaseAuthRepository {
               uNombreCompleto: value.user!.displayName ?? '',
               uCorreo: value.user!.email ?? '',
               uUrlFoto: value.user!.photoURL.toString(),
-              uPerfil:
-                  'estudiante', // Si no existe en la BD se crea como estudiante. Si no lo es, luego un admin cambia el perfil !!!!
+              uPerfil: 'estudiante',
               uAceptoTerminos: false,
               uActivo: true,
             ),

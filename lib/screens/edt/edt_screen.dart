@@ -1,4 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import '/models/models.dart';
 import '/widgets/widgets.dart';
@@ -32,6 +33,8 @@ class EdtScreen extends StatelessWidget {
     );
   }
 }
+
+User? user = FirebaseAuth.instance.currentUser;
 
 class EdtInfo extends StatelessWidget {
   const EdtInfo({
@@ -82,19 +85,25 @@ class EdtInfo extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Text(
-                              edt.edtNombre,
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .headline5!
-                                  .copyWith(color: Colors.white),
+                            Tooltip(
+                              message: 'Nombre del Entorno de Trabajo',
+                              child: Text(
+                                edt.edtNombre,
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .headline5!
+                                    .copyWith(color: Colors.white),
+                              ),
                             ),
-                            Text(
-                              'Saldo: ${edt.edtSaldoTiempo}',
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .headline5!
-                                  .copyWith(color: Colors.white),
+                            Tooltip(
+                              message: 'Saldo de tiempo restante en este EDT',
+                              child: Text(
+                                'Saldo: ${edt.edtSaldoTiempo}',
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .headline5!
+                                    .copyWith(color: Colors.white),
+                              ),
                             ),
                           ],
                         ),
@@ -110,33 +119,55 @@ class EdtInfo extends StatelessWidget {
                   ),
                   children: <Widget>[
                     ListTile(
-                      title: Text(
-                        'Unidad Curricular: ${edt.edtUCurricular}',
-                        style: Theme.of(context).textTheme.bodyText1,
+                      title: Tooltip(
+                        message:
+                            'Unidad Curricular a la cual pertenece este EDT',
+                        child: Text(
+                          'Unidad Curricular: ${edt.edtUCurricular}',
+                          style: TextStyle(
+                              fontSize: 14, fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ),
                     ListTile(
-                      title: Text(
-                        'Grupo: ${edt.edtGrupo}',
-                        style: Theme.of(context).textTheme.bodyText1,
+                      title: Tooltip(
+                        message: 'Grupo al cual pertenece este EDT',
+                        child: Text(
+                          'Grupo: ${edt.edtGrupo}',
+                          style: TextStyle(
+                              fontSize: 14, fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ),
                     ListTile(
-                      title: Text(
-                        'Referente: ${edt.edtReferenteNombre}',
-                        style: Theme.of(context).textTheme.bodyText1,
+                      title: Tooltip(
+                        message: 'Referente a cargo de este EDT',
+                        child: Text(
+                          'Referente: ${edt.edtReferenteNombre}',
+                          style: TextStyle(
+                              fontSize: 14, fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ),
                     ListTile(
-                      title: Text(
-                        'ImgBase: ${edt.edtImgBase}',
-                        style: Theme.of(context).textTheme.bodyText1,
+                      title: Tooltip(
+                        message: 'Imagen base usada en la creacion de este EDT',
+                        child: Text(
+                          'ImgBase: ${edt.edtImgBase}',
+                          style: TextStyle(
+                              fontSize: 14, fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ),
                     ListTile(
-                      title: Text(
-                        'ITR: ${edt.edtItr}',
-                        style: Theme.of(context).textTheme.bodyText1,
+                      title: Tooltip(
+                        message:
+                            'ITR al cual pertenece el UC / Grupo / Estudiante',
+                        child: Text(
+                          'ITR: ${edt.edtItr}',
+                          style: TextStyle(
+                              fontSize: 14, fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ),
                   ],
@@ -148,16 +179,35 @@ class EdtInfo extends StatelessWidget {
                   ),
                   children: <Widget>[
                     ListTile(
-                      title: Text(
-                        'Saldo de timepo: ${edt.edtSaldoTiempo}',
-                        style: Theme.of(context).textTheme.bodyText1,
+                      title: Tooltip(
+                        message: 'Saldo de tiempo restante en este EDT',
+                        child: Text(
+                          'Saldo de tiempo: ${edt.edtSaldoTiempo}',
+                          style: TextStyle(
+                              fontSize: 14, fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ),
                     ListTile(
-                      title: Text(
-                        'EDT Activo?: ${edt.edtActivo}',
-                        style: Theme.of(context).textTheme.bodyText1,
-                      ),
+                      title: edt.edtActivo == true
+                          ? Tooltip(
+                              message:
+                                  'Indica si el EDT esta activo o inactivo',
+                              child: Text(
+                                'EDT Activo?: El EDT esta activo',
+                                style: TextStyle(
+                                    fontSize: 14, fontWeight: FontWeight.bold),
+                              ),
+                            )
+                          : Tooltip(
+                              message:
+                                  'Indica si el EDT esta activo o inactivo',
+                              child: Text(
+                                'EDT Activo?: El EDT esta inactivo',
+                                style: TextStyle(
+                                    fontSize: 14, fontWeight: FontWeight.bold),
+                              ),
+                            ),
                     ),
                   ],
                 ),
@@ -168,10 +218,25 @@ class EdtInfo extends StatelessWidget {
                   ),
                   children: <Widget>[
                     ListTile(
-                      title: Text(
-                        'ID: ${edt.edtEstAsigId}',
-                        style: Theme.of(context).textTheme.bodyText1,
-                      ),
+                      title: edt.edtEstAsigId == user!.uid
+                          ? Tooltip(
+                              message:
+                                  'Nombre del usuario al cual pertenece este EDT',
+                              child: Text(
+                                'Usuario: ${user?.displayName}',
+                                style: TextStyle(
+                                    fontSize: 14, fontWeight: FontWeight.bold),
+                              ),
+                            )
+                          : Tooltip(
+                              message:
+                                  'ID del usuario al cual pertenece este EDT',
+                              child: Text(
+                                'ID: ${edt.edtEstAsigId}',
+                                style: TextStyle(
+                                    fontSize: 14, fontWeight: FontWeight.bold),
+                              ),
+                            ),
                     )
                   ],
                 ),

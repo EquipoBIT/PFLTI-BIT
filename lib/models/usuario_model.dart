@@ -1,9 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:equatable/equatable.dart';
 
-//enum Perfil { estudiante, docente, administrativo }
-//enum EstadoDelUsuario { activo, inactivo, suspendido, bajalogica }
-
 class Usuario extends Equatable {
   final String? uId;
   final String uCorreo;

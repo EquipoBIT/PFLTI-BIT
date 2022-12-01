@@ -168,7 +168,7 @@ class EdtActions extends StatelessWidget {
       onPressed: () {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Removed from your EnUso!'),
+            content: Text('Removido de tu lista de En Uso!'),
           ),
         );
         context.read<EnUsoBloc>().add(RemoveEdtFromEnUso(edt));

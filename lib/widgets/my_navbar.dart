@@ -92,26 +92,26 @@ class AddToEnUsoNavBar extends StatelessWidget {
                 onPressed: () {
                   ScaffoldMessenger.of(context).showSnackBar(
                     const SnackBar(
-                      content: Text('Added to your EnUsoList!'),
+                      content: Text('Agregado a tu lista de En Uso'),
                     ),
                   );
                   context.read<EnUsoBloc>().add(AddEdtToEnUso(edt));
                 },
               );
             }
-            return const Text('Something went wrong!');
+            return Flexible(
+                child: const Text(
+              'Algo salio mal, si el problema persiste ponte en contacto con el soporte tecnico',
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+            ));
           },
         ),
       ],
     );
   }
 
-// https://firebase.flutter.dev/docs/functions/usage/
-
   Future<void> stopEDT(BuildContext context, String edtNombre) async {
     try {
-// ¡¡¡¡¡¡¡¡¡¡¡¡¡
-// OJO HAY QUE SACAR ESTE MSG para el screen y no ponerlo en el metodo async!!!
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text(

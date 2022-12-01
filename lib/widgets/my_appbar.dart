@@ -17,8 +17,11 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
     User? user = FirebaseAuth.instance.currentUser;
     var userImage = user?.photoURL;
     var nonulluserImage = userImage ?? 'assets/images/logo_bit';
+
     Uri pdf = Uri.https('tinyurl.com', '/bittestpdf');
+
     String email = Uri.encodeComponent('pflti-equipo-bit@googlegroups.com');
+
     Uri mail = Uri.parse('mailto:$email');
 
     return AppBar(
@@ -46,7 +49,7 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
                   },
                 ),
                 IconButton(
-                  tooltip: 'Perfil',
+                  tooltip: 'Perfil de usuario y cerrar sesión',
                   icon: ClipRRect(
                     borderRadius: BorderRadius.circular(13.0),
                     child: Image.network(nonulluserImage),
@@ -59,7 +62,7 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
                   },
                 ),
                 IconButton(
-                  tooltip: 'Estadisticas',
+                  tooltip: 'Estadisticas de uso de EDTs',
                   icon: Icon(Icons.bar_chart),
                   onPressed: () {
                     Navigator.pushNamed(
@@ -69,7 +72,7 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
                   },
                 ),
                 IconButton(
-                  tooltip: 'EDTs en uso',
+                  tooltip: 'Lista de tus EDTs en uso',
                   icon: Icon(Icons.handyman),
                   onPressed: () {
                     Navigator.pushNamed(
@@ -79,17 +82,19 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
                   },
                 ),
                 IconButton(
-                  tooltip: 'Enviar correo a Soporte',
+                  tooltip: 'Enviar correo a Soporte Tecnico',
                   icon: Icon(Icons.email),
                   onPressed: () async {
-                    await launchUrl(mail);
+                    if (await launchUrl(mail)) {
+                    } else {}
                   },
                 ),
                 IconButton(
                   tooltip: 'Ver PDF guia - FAQ',
                   icon: Icon(Icons.quiz),
                   onPressed: () async {
-                    await launchUrl(pdf);
+                    if (await launchUrl(pdf)) {
+                    } else {}
                   },
                 ),
               ],

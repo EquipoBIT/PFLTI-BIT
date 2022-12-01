@@ -32,7 +32,6 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocListener<AuthBloc, AuthState>(
         listener: (context, state) {
-          debugPrint('Profile screen Auth Listener');
           if (state.status == AuthStatus.unauthenticated) {
             Timer(
               const Duration(seconds: 1),
@@ -41,7 +40,7 @@ class ProfileScreen extends StatelessWidget {
           }
         },
         child: Scaffold(
-          appBar: const MyAppBar(title: 'Profile'),
+          appBar: const MyAppBar(title: 'Perfil del usuario'),
           bottomNavigationBar: const MyNavBar(screen: routeName),
           body: BlocBuilder<ProfileBloc, ProfileState>(
             builder: (context, state) {
@@ -53,35 +52,60 @@ class ProfileScreen extends StatelessWidget {
               if (state is ProfileLoaded) {
                 return Column(
                   children: [
-                    const SizedBox(height: 5),
+                    const SizedBox(height: 20),
                     Text(
                       'Informacion de Usuario',
-                      style: Theme.of(context).textTheme.headline3,
+                      style: Theme.of(context).textTheme.headline2,
                     ),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         const SizedBox(height: 5),
                         Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: <Widget>[
-                            Image.network(state.user.uUrlFoto)
-                          ],
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const SizedBox(height: 5),
-                            Text(state.user.uNombreCompleto),
-                            const SizedBox(height: 5),
-                            Text(state.user.uCorreo),
-                            const SizedBox(height: 5),
-                            Text(state.user.uPerfil),
-                            const SizedBox(height: 5),
+                            Image.network(
+                              state.user.uUrlFoto,
+                              scale: 0.8,
+                            )
                           ],
                         ),
                       ],
                     ),
+                    const SizedBox(height: 20),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const SizedBox(width: 20),
+                        Flexible(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const SizedBox(height: 5),
+                              Text(
+                                'Nombre: ${state.user.uNombreCompleto}',
+                                style: TextStyle(
+                                    fontSize: 14, fontWeight: FontWeight.bold),
+                              ),
+                              const SizedBox(height: 5),
+                              Text(
+                                'Correo: ${state.user.uCorreo}',
+                                style: TextStyle(
+                                    fontSize: 14, fontWeight: FontWeight.bold),
+                              ),
+                              const SizedBox(height: 5),
+                              Text(
+                                'Perfil del usuario: ${state.user.uPerfil}',
+                                style: TextStyle(
+                                    fontSize: 14, fontWeight: FontWeight.bold),
+                              ),
+                              const SizedBox(height: 5),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 20),
                     Center(
                       child: ElevatedButton(
                         onPressed: () {
@@ -93,7 +117,7 @@ class ProfileScreen extends StatelessWidget {
                           fixedSize: const Size(200, 40),
                         ),
                         child: Text(
-                          'Salir',
+                          'Cerrar sesión',
                           style:
                               Theme.of(context).textTheme.headline4!.copyWith(
                                     color: Colors.white,
@@ -112,8 +136,8 @@ class ProfileScreen extends StatelessWidget {
                       width: double.infinity,
                       child: Center(
                         child: Text(
-                          'You are not logged in!',
-                          style: Theme.of(context).textTheme.headline4,
+                          'No estas logueado',
+                          style: Theme.of(context).textTheme.headline3,
                         ),
                       ),
                     ),
@@ -128,8 +152,8 @@ class ProfileScreen extends StatelessWidget {
                         fixedSize: const Size(200, 40),
                       ),
                       child: Text(
-                        'Login',
-                        style: Theme.of(context).textTheme.headline4!.copyWith(
+                        'Iniciar sesión',
+                        style: Theme.of(context).textTheme.headline3!.copyWith(
                               color: Colors.white,
                             ),
                       ),
@@ -137,7 +161,11 @@ class ProfileScreen extends StatelessWidget {
                   ],
                 );
               } else {
-                return const Text('Something went wrong');
+                return Flexible(
+                    child: const Text(
+                  'Algo salio mal, si el problema persiste ponte en contacto con el soporte tecnico',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                ));
               }
             },
           ),
