@@ -6,14 +6,15 @@
 .packages
 .pub-cache/
 .pub/
-/build/
+build/
 
 # ignorar directorios creados por flutter deploy
-/android/
-/linux/
-/windows/
-/macos/
-/web/
+android/
+ios/
+linux/
+macos/
+web/
+windows/
 
 # Logs
 logs
@@ -81,3 +82,6 @@ node_modules/
 
 # dotenv environment variables file
 .env
+
+.idea/
+.vscode/
