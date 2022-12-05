@@ -23,6 +23,7 @@ class UsoScreen extends StatelessWidget {
       appBar: MyAppBar(title: 'Estadisticas de uso'),
       bottomNavigationBar: const MyNavBar(screen: routeName),
       body: FirestoreListView(
+        pageSize: 20,
         query: FirebaseFirestore.instance
             .collection('uso')
             .where('usoEdtEstAsigId', isEqualTo: user!.uid)
@@ -58,7 +59,7 @@ class UsoScreen extends StatelessWidget {
                         height: 10,
                       ),
                       Text(
-                        'Fecha y hora de encendido: ${dateOn.day} / ${dateOn.month} / ${dateOn.year}  ${dateOn.hour}: ${dateOn.minute}',
+                        'Fecha y hora de encendido: ${dateOn.day}/${dateOn.month}/${dateOn.year}  ${dateOn.hour}:${dateOn.minute}',
                         style: Theme.of(context).textTheme.headline5,
                       ),
                     ],
@@ -69,7 +70,7 @@ class UsoScreen extends StatelessWidget {
                         height: 10,
                       ),
                       Text(
-                        'Fecha y hora de apagado: ${dateOff.day} / ${dateOff.month} / ${dateOff.year}  ${dateOff.hour}: ${dateOff.minute}',
+                        'Fecha y hora de apagado: ${dateOff.day}/${dateOff.month}/${dateOff.year}  ${dateOff.hour}:${dateOff.minute}',
                         style: Theme.of(context).textTheme.headline5,
                       ),
                     ],

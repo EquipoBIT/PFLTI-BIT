@@ -6,7 +6,7 @@ class Uso extends Equatable {
   final String usoEdtGrupo;
   final String usoEdtNombre;
   final String usoEdtUC;
-  final int usoMinutos;
+  final double usoMinutos;
   final Timestamp usoOn;
   final Timestamp usoOff;
 
@@ -26,7 +26,7 @@ class Uso extends Equatable {
       usoEdtGrupo: snap['usoEdtGrupo'],
       usoEdtNombre: snap['usoEdtNombre'],
       usoEdtUC: snap['usoEdtUC'],
-      usoMinutos: (snap['usoMinutos'] as num).toInt(),
+      usoMinutos: (snap['usoMinutos'] as num).toDouble(),
       usoOn: snap['usoOn'],
       usoOff: snap['usoOff'],
     );
