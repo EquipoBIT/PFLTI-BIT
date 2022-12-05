@@ -12,3 +12,5 @@ export 'usuario/base_usuario_repository.dart';
 export 'usuario/usuario_repository.dart';
 export 'terms/base_terms_repository.dart';
 export 'terms/terms_repository.dart';
+export 'uso/base_uso_repository.dart';
+export 'uso/uso_repository.dart';

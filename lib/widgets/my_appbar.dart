@@ -67,7 +67,8 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
                   onPressed: () {
                     Navigator.pushNamed(
                       context,
-                      '/static',
+                      '/uso',
+//                      '/static',
                     );
                   },
                 ),

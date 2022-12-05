@@ -6,3 +6,4 @@ export 'profile/profile_screen.dart';
 export 'enuso/enuso_screen.dart';
 export 'terms/terms_screen.dart';
 export 'statics/static_screen.dart';
+export 'uso/uso_screen.dart';

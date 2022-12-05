@@ -25,6 +25,8 @@ class AppRouter {
         return LoginScreen.route();
       case TermsScreen.routeName:
         return TermsScreen.route();
+      case UsoScreen.routeName:
+        return UsoScreen.route();
       default:
         return _errorRoute();
     }

@@ -4,6 +4,7 @@ import 'dart:core';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import '../../widgets/widgets.dart';
 
 import '../../widgets/widgets.dart';
@@ -40,6 +41,7 @@ class StaticsScreen extends StatelessWidget {
             shrinkWrap: true,
             itemCount: snapshot.data!.docs.length,
             itemBuilder: (context, index) {
+              String formattedDate = DateFormat.yMMMEd().format(DateTime.fromMillisecondsSinceEpoch(snapshot.data!.docs[index].get('usoOn')));
               return Column(
                 children: [
                   Row(
@@ -63,7 +65,8 @@ class StaticsScreen extends StatelessWidget {
                         height: 10,
                       ),
                       Text(
-                        'Fecha y hora de encendido: ${snapshot.data!.docs[index].get('usoOn').toDate()}',
+                        //'Fecha y hora de encendido: ${snapshot.data!.docs[index].get('usoOn').toDate()}',
+                        'Fecha y hora de encendido: ${formattedDate}',
                         style: Theme.of(context).textTheme.headline5,
                       ),
                     ],
