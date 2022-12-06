@@ -84,20 +84,17 @@ class ProfileScreen extends StatelessWidget {
                               const SizedBox(height: 5),
                               Text(
                                 'Nombre: ${state.user.uNombreCompleto}',
-                                style: TextStyle(
-                                    fontSize: 14, fontWeight: FontWeight.bold),
+                                style: Theme.of(context).textTheme.headline6,
                               ),
                               const SizedBox(height: 5),
                               Text(
                                 'Correo: ${state.user.uCorreo}',
-                                style: TextStyle(
-                                    fontSize: 14, fontWeight: FontWeight.bold),
+                                style: Theme.of(context).textTheme.headline6,
                               ),
                               const SizedBox(height: 5),
                               Text(
                                 'Perfil del usuario: ${state.user.uPerfil}',
-                                style: TextStyle(
-                                    fontSize: 14, fontWeight: FontWeight.bold),
+                                style: Theme.of(context).textTheme.headline6,
                               ),
                               const SizedBox(height: 5),
                             ],
@@ -162,9 +159,9 @@ class ProfileScreen extends StatelessWidget {
                 );
               } else {
                 return Flexible(
-                    child: const Text(
+                    child: Text(
                   'Algo salio mal, si el problema persiste ponte en contacto con el soporte tecnico',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                  style: Theme.of(context).textTheme.headline5,
                 ));
               }
             },

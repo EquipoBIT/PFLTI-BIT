@@ -115,7 +115,7 @@ class EdtInfo extends StatelessWidget {
                   initiallyExpanded: false,
                   title: Text(
                     'Detalle del EDT',
-                    style: Theme.of(context).textTheme.headline3,
+                    style: Theme.of(context).textTheme.headline4,
                   ),
                   children: <Widget>[
                     ListTile(
@@ -124,8 +124,7 @@ class EdtInfo extends StatelessWidget {
                             'Unidad Curricular a la cual pertenece este EDT',
                         child: Text(
                           'Unidad Curricular: ${edt.edtUCurricular}',
-                          style: TextStyle(
-                              fontSize: 14, fontWeight: FontWeight.bold),
+                          style: Theme.of(context).textTheme.headline6,
                         ),
                       ),
                     ),
@@ -134,8 +133,7 @@ class EdtInfo extends StatelessWidget {
                         message: 'Grupo al cual pertenece este EDT',
                         child: Text(
                           'Grupo: ${edt.edtGrupo}',
-                          style: TextStyle(
-                              fontSize: 14, fontWeight: FontWeight.bold),
+                          style: Theme.of(context).textTheme.headline6,
                         ),
                       ),
                     ),
@@ -144,8 +142,7 @@ class EdtInfo extends StatelessWidget {
                         message: 'Referente a cargo de este EDT',
                         child: Text(
                           'Referente: ${edt.edtReferenteNombre}',
-                          style: TextStyle(
-                              fontSize: 14, fontWeight: FontWeight.bold),
+                          style: Theme.of(context).textTheme.headline6,
                         ),
                       ),
                     ),
@@ -154,8 +151,7 @@ class EdtInfo extends StatelessWidget {
                         message: 'Imagen base usada en la creacion de este EDT',
                         child: Text(
                           'ImgBase: ${edt.edtImgBase}',
-                          style: TextStyle(
-                              fontSize: 14, fontWeight: FontWeight.bold),
+                          style: Theme.of(context).textTheme.headline6,
                         ),
                       ),
                     ),
@@ -165,8 +161,7 @@ class EdtInfo extends StatelessWidget {
                             'ITR al cual pertenece el UC / Grupo / Estudiante',
                         child: Text(
                           'ITR: ${edt.edtItr}',
-                          style: TextStyle(
-                              fontSize: 14, fontWeight: FontWeight.bold),
+                          style: Theme.of(context).textTheme.headline6,
                         ),
                       ),
                     ),
@@ -175,7 +170,7 @@ class EdtInfo extends StatelessWidget {
                 ExpansionTile(
                   title: Text(
                     "Actividad",
-                    style: Theme.of(context).textTheme.headline3,
+                    style: Theme.of(context).textTheme.headline4,
                   ),
                   children: <Widget>[
                     ListTile(
@@ -183,8 +178,7 @@ class EdtInfo extends StatelessWidget {
                         message: 'Saldo de tiempo restante en este EDT',
                         child: Text(
                           'Saldo de tiempo: ${edt.edtSaldoTiempo}',
-                          style: TextStyle(
-                              fontSize: 14, fontWeight: FontWeight.bold),
+                          style: Theme.of(context).textTheme.headline6,
                         ),
                       ),
                     ),
@@ -195,8 +189,7 @@ class EdtInfo extends StatelessWidget {
                                   'Indica si el EDT esta activo o inactivo',
                               child: Text(
                                 'EDT Activo?: El EDT esta activo',
-                                style: TextStyle(
-                                    fontSize: 14, fontWeight: FontWeight.bold),
+                                style: Theme.of(context).textTheme.headline6,
                               ),
                             )
                           : Tooltip(
@@ -204,8 +197,7 @@ class EdtInfo extends StatelessWidget {
                                   'Indica si el EDT esta activo o inactivo',
                               child: Text(
                                 'EDT Activo?: El EDT esta inactivo',
-                                style: TextStyle(
-                                    fontSize: 14, fontWeight: FontWeight.bold),
+                                style: Theme.of(context).textTheme.headline6,
                               ),
                             ),
                     ),
@@ -214,7 +206,7 @@ class EdtInfo extends StatelessWidget {
                 ExpansionTile(
                   title: Text(
                     "Estudiante Asignado",
-                    style: Theme.of(context).textTheme.headline3,
+                    style: Theme.of(context).textTheme.headline4,
                   ),
                   children: <Widget>[
                     ListTile(
@@ -224,8 +216,7 @@ class EdtInfo extends StatelessWidget {
                                   'Nombre del usuario al cual pertenece este EDT',
                               child: Text(
                                 'Usuario: ${user?.displayName}',
-                                style: TextStyle(
-                                    fontSize: 14, fontWeight: FontWeight.bold),
+                                style: Theme.of(context).textTheme.headline6,
                               ),
                             )
                           : Tooltip(
@@ -233,8 +224,7 @@ class EdtInfo extends StatelessWidget {
                                   'ID del usuario al cual pertenece este EDT',
                               child: Text(
                                 'ID: ${edt.edtEstAsigId}',
-                                style: TextStyle(
-                                    fontSize: 14, fontWeight: FontWeight.bold),
+                                style: Theme.of(context).textTheme.headline6,
                               ),
                             ),
                     )
