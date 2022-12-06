@@ -42,14 +42,14 @@ class UsoScreen extends StatelessWidget {
                     children: [
                       Text(
                         'Nombre del EDT: ${data['usoEdtNombre']}',
-                        style: Theme.of(context).textTheme.headline4,
+                        style: Theme.of(context).textTheme.headline5,
                       ),
                       SizedBox(
                         width: 20,
                       ),
                       Text(
                         'Minutos usados: ${data['usoMinutos']}',
-                        style: Theme.of(context).textTheme.headline4,
+                        style: Theme.of(context).textTheme.headline6,
                       ),
                     ],
                   ),
@@ -60,7 +60,7 @@ class UsoScreen extends StatelessWidget {
                       ),
                       Text(
                         'Fecha y hora de encendido: ${dateOn.day}/${dateOn.month}/${dateOn.year}  ${dateOn.hour}:${dateOn.minute}',
-                        style: Theme.of(context).textTheme.headline5,
+                        style: Theme.of(context).textTheme.headline6,
                       ),
                     ],
                   ),
@@ -71,7 +71,7 @@ class UsoScreen extends StatelessWidget {
                       ),
                       Text(
                         'Fecha y hora de apagado: ${dateOff.day}/${dateOff.month}/${dateOff.year}  ${dateOff.hour}:${dateOff.minute}',
-                        style: Theme.of(context).textTheme.headline5,
+                        style: Theme.of(context).textTheme.headline6,
                       ),
                     ],
                   ),
@@ -82,7 +82,7 @@ class UsoScreen extends StatelessWidget {
                       ),
                       Text(
                         'Grupo: ${data['usoEdtGrupo']}',
-                        style: Theme.of(context).textTheme.headline5,
+                        style: Theme.of(context).textTheme.headline6,
                       ),
                     ],
                   ),
@@ -93,7 +93,7 @@ class UsoScreen extends StatelessWidget {
                       ),
                       Text(
                         'Unidad Curricular: ${data['usoEdtUC']}',
-                        style: Theme.of(context).textTheme.headline5,
+                        style: Theme.of(context).textTheme.headline6,
                       ),
                     ],
                   ),
