@@ -29,7 +29,17 @@ class TermsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Uri terms = Uri.https('tinyurl.com', '/bittestpdf');
+    Uri terms = Uri.https('pfltibit.page.link', '/rniX');
+    Future<void>? _launched;
+    Future<void> _launchInBrowser(Uri url) async {
+      if (!await launchUrl(
+        url,
+        mode: LaunchMode.externalApplication,
+      )) {
+        throw 'No se puede acceder $url';
+      }
+    }
+
     return BlocListener<AuthBloc, AuthState>(
         listener: (context, state) {
           debugPrint(
@@ -184,11 +194,11 @@ class TermsScreen extends StatelessWidget {
                                     textStyle: const TextStyle(fontSize: 20),
                                   ),
                                   onPressed: () async {
-                                    await launchUrl(terms);
+                                    _launched = _launchInBrowser(terms);
                                   },
                                   icon: Icon(Icons.link),
                                   label: const Text(
-                                    "Ver en PDF",
+                                    "Descargar en PDF",
                                     style: TextStyle(
                                         fontSize: 14,
                                         color: Colors.blue,

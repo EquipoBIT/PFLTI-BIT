@@ -18,7 +18,16 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
     var userImage = user?.photoURL;
     var nonulluserImage = userImage ?? 'assets/images/logo_bit';
 
-    Uri pdf = Uri.https('tinyurl.com', '/bittestpdf');
+    Uri pdf = Uri.https('pfltibit.page.link', '/oN6u');
+    Future<void>? _launched;
+    Future<void> _launchInBrowser(Uri url) async {
+      if (!await launchUrl(
+        url,
+        mode: LaunchMode.externalApplication,
+      )) {
+        throw 'No se puede acceder $url';
+      }
+    }
 
     String email = Uri.encodeComponent('pflti-equipo-bit@googlegroups.com');
 
@@ -62,17 +71,6 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
                   },
                 ),
                 IconButton(
-                  tooltip: 'Estadisticas de uso de EDTs',
-                  icon: Icon(Icons.bar_chart),
-                  onPressed: () {
-                    Navigator.pushNamed(
-                      context,
-                      '/uso',
-//                      '/static',
-                    );
-                  },
-                ),
-                IconButton(
                   tooltip: 'Lista de tus EDTs en uso',
                   icon: Icon(Icons.handyman),
                   onPressed: () {
@@ -94,8 +92,9 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
                   tooltip: 'Ver PDF guia - FAQ',
                   icon: Icon(Icons.quiz),
                   onPressed: () async {
-                    if (await launchUrl(pdf)) {
-                    } else {}
+                    _launched = _launchInBrowser(pdf);
+                    /*if (await launchUrl(pdf)) {
+                    } else {}*/
                   },
                 ),
               ],
