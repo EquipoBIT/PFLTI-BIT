@@ -51,7 +51,7 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
               children: [
                 IconButton(
                   icon: Image.asset('assets/images/logo_bit.png'),
-                  tooltip: 'Pagina principal',
+                  tooltip: 'Pagina principal / Volver',
                   iconSize: 30,
                   onPressed: () {
                     Navigator.pushNamed(context, '/');
