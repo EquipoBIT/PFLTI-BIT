@@ -40,15 +40,17 @@ class HomeNavBar extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         IconButton(
+          tooltip: 'Pantalla principal / Volver',
           icon: const Icon(Icons.home, color: Colors.white),
           onPressed: () {
             Navigator.pushNamed(context, '/');
           },
         ),
         IconButton(
-          icon: const Icon(Icons.person, color: Colors.white),
+          tooltip: 'Estadisticas de uso',
+          icon: const Icon(Icons.bar_chart, color: Colors.white),
           onPressed: () {
-            Navigator.pushNamed(context, '/profile');
+            Navigator.pushNamed(context, '/uso');
           },
         ),
       ],
@@ -114,8 +116,10 @@ class AddToEnUsoNavBar extends StatelessWidget {
     try {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text(
-              'EDT OFF! Se congela el tiempo de consumo hasta que Ud encienda nuevamente el EDT.'),
+          content: Flexible(
+            child: Text(
+                'EDT OFF! Se congela el tiempo de consumo hasta que Ud encienda nuevamente el EDT.'),
+          ),
         ),
       );
       HttpsCallable callable =
@@ -134,8 +138,10 @@ class AddToEnUsoNavBar extends StatelessWidget {
     try {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text(
-              'EDT ON! Se descuenta tiempo de consumo hasta que Ud lo Detenga o se Agote el saldo.'),
+          content: Flexible(
+            child: Text(
+                'EDT ON! Se descuenta tiempo de consumo hasta que Ud lo Detenga o se Agote el saldo.'),
+          ),
         ),
       );
       HttpsCallable callable =

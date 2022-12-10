@@ -42,8 +42,6 @@ class TermsScreen extends StatelessWidget {
 
     return BlocListener<AuthBloc, AuthState>(
         listener: (context, state) {
-          debugPrint(
-              'Escucha de autenticacion de la paginas de terminos y condiciones');
           if (state.status == AuthStatus.unauthenticated) {
             Timer(
               const Duration(seconds: 1),
@@ -241,8 +239,10 @@ class TermsScreen extends StatelessWidget {
                   ),
                 );
               } else {
-                return const Text(
-                    'Algo salio mal, si el error persiste pongase en contacto con el soporte.');
+                return Flexible(
+                  child: const Text(
+                      'Algo salio mal, si el error persiste pongase en contacto con el soporte.'),
+                );
               }
             },
           ),
