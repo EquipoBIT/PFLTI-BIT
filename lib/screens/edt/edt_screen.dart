@@ -52,6 +52,7 @@ class EdtInfo extends StatelessWidget {
           CarouselSlider(
             options: CarouselOptions(
               aspectRatio: 1.5,
+              height: 300,
               viewportFraction: 0.9,
               enlargeCenterPage: true,
               enlargeStrategy: CenterPageEnlargeStrategy.height,
@@ -239,8 +240,7 @@ class EdtInfo extends StatelessWidget {
                   children: <Widget>[
                     ListTile(
                       title: Tooltip(
-                        message:
-                            'Proyecto al cual pertenece este EDT',
+                        message: 'Proyecto al cual pertenece este EDT',
                         child: Text(
                           'Proyecto: ${edt.edtProjectId}',
                           style: Theme.of(context).textTheme.headline6,
