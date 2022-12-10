@@ -230,6 +230,34 @@ class EdtInfo extends StatelessWidget {
                     )
                   ],
                 ),
+                ExpansionTile(
+                  initiallyExpanded: false,
+                  title: Text(
+                    'Infraestructura',
+                    style: Theme.of(context).textTheme.headline4,
+                  ),
+                  children: <Widget>[
+                    ListTile(
+                      title: Tooltip(
+                        message:
+                            'Proyecto al cual pertenece este EDT',
+                        child: Text(
+                          'Proyecto: ${edt.edtProjectId}',
+                          style: Theme.of(context).textTheme.headline6,
+                        ),
+                      ),
+                    ),
+                    ListTile(
+                      title: Tooltip(
+                        message: 'Zona a la cual pertenece este EDT',
+                        child: Text(
+                          'Zona: ${edt.edtZone}',
+                          style: Theme.of(context).textTheme.headline6,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
           ),

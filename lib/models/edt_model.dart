@@ -28,6 +28,10 @@ class Edt extends Equatable {
   final String? edtReferenteNombre;
   @HiveField(10)
   final double? edtSaldoTiempo;
+  @HiveField(11)
+  final String edtProjectId;
+  @HiveField(12)
+  final String edtZone;
 
   const Edt({
     required this.edtId,
@@ -41,6 +45,8 @@ class Edt extends Equatable {
     required this.edtActivo,
     required this.edtReferenteNombre,
     required this.edtSaldoTiempo,
+    required this.edtProjectId,
+    required this.edtZone,
   });
 
   static Edt fromSnapshot(DocumentSnapshot snap) {
@@ -56,6 +62,8 @@ class Edt extends Equatable {
       edtActivo: snap['edtActivo'],
       edtReferenteNombre: snap['edtReferenteNombre'],
       edtSaldoTiempo: (snap['edtSaldoTiempo'] as num).toDouble(),
+      edtProjectId: snap['edtProjectId'],
+      edtZone: snap['edtZone'],
     );
     return edt;
   }
@@ -73,5 +81,7 @@ class Edt extends Equatable {
         edtActivo,
         edtReferenteNombre,
         edtSaldoTiempo,
+        edtProjectId,
+        edtZone,
       ];
 }
