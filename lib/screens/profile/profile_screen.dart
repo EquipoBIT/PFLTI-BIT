@@ -78,26 +78,28 @@ class ProfileScreen extends StatelessWidget {
                       children: [
                         const SizedBox(width: 20),
                         Flexible(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              const SizedBox(height: 5),
-                              Text(
-                                'Nombre: ${state.user.uNombreCompleto}',
-                                style: Theme.of(context).textTheme.headline6,
-                              ),
-                              const SizedBox(height: 5),
-                              Text(
-                                'Correo: ${state.user.uCorreo}',
-                                style: Theme.of(context).textTheme.headline6,
-                              ),
-                              const SizedBox(height: 5),
-                              Text(
-                                'Perfil del usuario: ${state.user.uPerfil}',
-                                style: Theme.of(context).textTheme.headline6,
-                              ),
-                              const SizedBox(height: 5),
-                            ],
+                          child: Center(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                const SizedBox(height: 5),
+                                Text(
+                                  'Nombre: ${state.user.uNombreCompleto}',
+                                  style: Theme.of(context).textTheme.headline6,
+                                ),
+                                const SizedBox(height: 5),
+                                Text(
+                                  'Correo: ${state.user.uCorreo}',
+                                  style: Theme.of(context).textTheme.headline6,
+                                ),
+                                const SizedBox(height: 5),
+                                Text(
+                                  'Perfil del usuario: ${state.user.uPerfil}',
+                                  style: Theme.of(context).textTheme.headline6,
+                                ),
+                                const SizedBox(height: 5),
+                              ],
+                            ),
                           ),
                         ),
                       ],

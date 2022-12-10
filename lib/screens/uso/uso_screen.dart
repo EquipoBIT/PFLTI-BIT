@@ -67,93 +67,95 @@ class UsoScreen extends StatelessWidget {
                     const SizedBox(width: 30),
                     Expanded(
                       child: ListTile(
-                        title: Column(
-                          children: [
-                            Row(
-                              children: [
-                                Flexible(
-                                  child: Text(
-                                    'Nombre del EDT: ${data['usoEdtNombre']}',
-                                    style:
-                                        Theme.of(context).textTheme.headline4,
+                        title: Center(
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  Flexible(
+                                    child: Text(
+                                      'Nombre del EDT: ${data['usoEdtNombre']}',
+                                      style:
+                                          Theme.of(context).textTheme.headline4,
+                                    ),
                                   ),
-                                ),
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                SizedBox(
-                                  height: 10,
-                                ),
-                                Flexible(
-                                  child: Text(
-                                    'Minutos usados: ${data['usoMinutos']}',
-                                    style:
-                                        Theme.of(context).textTheme.headline4,
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  SizedBox(
+                                    height: 10,
                                   ),
-                                ),
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                SizedBox(
-                                  height: 10,
-                                ),
-                                Flexible(
-                                  child: Text(
-                                    'Fecha y hora de encendido: ${dateOn.day}/${dateOn.month}/${dateOn.year}  ${dateOn.hour}:${dateOn.minute}',
-                                    style:
-                                        Theme.of(context).textTheme.headline5,
+                                  Flexible(
+                                    child: Text(
+                                      'Minutos usados: ${data['usoMinutos']}',
+                                      style:
+                                          Theme.of(context).textTheme.headline4,
+                                    ),
                                   ),
-                                ),
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                SizedBox(
-                                  height: 10,
-                                ),
-                                Flexible(
-                                  child: Text(
-                                    'Fecha y hora de apagado: ${dateOff.day}/${dateOff.month}/${dateOff.year}  ${dateOff.hour}:${dateOff.minute}',
-                                    style:
-                                        Theme.of(context).textTheme.headline5,
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  SizedBox(
+                                    height: 10,
                                   ),
-                                ),
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                SizedBox(
-                                  height: 10,
-                                ),
-                                Flexible(
-                                  child: Text(
-                                    'Grupo: ${data['usoEdtGrupo']}',
-                                    style:
-                                        Theme.of(context).textTheme.headline5,
+                                  Flexible(
+                                    child: Text(
+                                      'Fecha y hora de encendido: ${dateOn.day}/${dateOn.month}/${dateOn.year}  ${dateOn.hour}:${dateOn.minute}',
+                                      style:
+                                          Theme.of(context).textTheme.headline5,
+                                    ),
                                   ),
-                                ),
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                SizedBox(
-                                  height: 10,
-                                ),
-                                Flexible(
-                                  child: Text(
-                                    'Unidad Curricular: ${data['usoEdtUC']}',
-                                    style:
-                                        Theme.of(context).textTheme.headline5,
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  SizedBox(
+                                    height: 10,
                                   ),
-                                ),
-                              ],
-                            ),
-                            SizedBox(
-                              height: 30,
-                            )
-                          ],
+                                  Flexible(
+                                    child: Text(
+                                      'Fecha y hora de apagado: ${dateOff.day}/${dateOff.month}/${dateOff.year}  ${dateOff.hour}:${dateOff.minute}',
+                                      style:
+                                          Theme.of(context).textTheme.headline5,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  SizedBox(
+                                    height: 10,
+                                  ),
+                                  Flexible(
+                                    child: Text(
+                                      'Grupo: ${data['usoEdtGrupo']}',
+                                      style:
+                                          Theme.of(context).textTheme.headline5,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  SizedBox(
+                                    height: 10,
+                                  ),
+                                  Flexible(
+                                    child: Text(
+                                      'Unidad Curricular: ${data['usoEdtUC']}',
+                                      style:
+                                          Theme.of(context).textTheme.headline5,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              SizedBox(
+                                height: 30,
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     ),
