@@ -26,6 +26,8 @@ void main() {
         edtActivo: true,
         edtReferenteNombre: 'Gabriel',
         edtSaldoTiempo: 20,
+        edtProjectId: 'pflti-bit-edts',
+        edtZone: 'us-central1-a',
       );
 
       EdtInfo page = EdtInfo(edt: edt);

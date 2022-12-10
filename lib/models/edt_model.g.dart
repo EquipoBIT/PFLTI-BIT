@@ -28,13 +28,15 @@ class EdtAdapter extends TypeAdapter<Edt> {
       edtActivo: fields[8] as bool?,
       edtReferenteNombre: fields[9] as String?,
       edtSaldoTiempo: fields[10] as double?,
+      edtProjectId: fields[11] as String,
+      edtZone: fields[12] as String,
     );
   }
 
   @override
   void write(BinaryWriter writer, Edt obj) {
     writer
-      ..writeByte(11)
+      ..writeByte(13)
       ..writeByte(0)
       ..write(obj.edtId)
       ..writeByte(1)
@@ -56,7 +58,11 @@ class EdtAdapter extends TypeAdapter<Edt> {
       ..writeByte(9)
       ..write(obj.edtReferenteNombre)
       ..writeByte(10)
-      ..write(obj.edtSaldoTiempo);
+      ..write(obj.edtSaldoTiempo)
+      ..writeByte(11)
+      ..write(obj.edtProjectId)
+      ..writeByte(12)
+      ..write(obj.edtZone);
   }
 
   @override
