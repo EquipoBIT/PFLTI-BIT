@@ -13,7 +13,7 @@ void main() {
     testWidgets('Testing LoginScreen', (tester) async {
       LoginPage page = const LoginPage();
       await tester.pumpWidget(makeTestableWidget(child: page));
-      expect(find.text('LOG IN WITH UTEC'), findsOneWidget);
+      expect(find.text('Iniciar sesión con correo UTEC'), findsOneWidget);
     });
   });
 }

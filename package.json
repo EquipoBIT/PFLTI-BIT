@@ -2,7 +2,7 @@
   "dependencies": {
     "@google-cloud/compute": "^3.5.0",
     "@google-cloud/storage": "^6.5.2",
-    "firebase-functions": "^3.24.1",
+    "firebase-functions": "^4.1.0",
     "googleapis": "^108.0.0"
   },
   "devDependencies": {

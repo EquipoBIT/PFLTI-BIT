@@ -74,13 +74,13 @@ class AddToEnUsoNavBar extends StatelessWidget {
         IconButton(
           icon: const Icon(Icons.power_settings_new, color: Colors.white),
           onPressed: () {
-            startEDT(context, edt.edtNombre);
+            startEDT(context, edt.edtNombre, edt.edtProjectId, edt.edtZone);
           },
         ),
         IconButton(
           icon: const Icon(Icons.power_off, color: Colors.white),
           onPressed: () {
-            stopEDT(context, edt.edtNombre);
+            stopEDT(context, edt.edtNombre, edt.edtProjectId, edt.edtZone);
           },
         ),
         BlocBuilder<EnUsoBloc, EnUsoState>(
@@ -112,7 +112,7 @@ class AddToEnUsoNavBar extends StatelessWidget {
     );
   }
 
-  Future<void> stopEDT(BuildContext context, String edtNombre) async {
+  Future<void> stopEDT(BuildContext context, String edtNombre, String edtProjectId, String edtZone) async {
     try {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
@@ -125,7 +125,9 @@ class AddToEnUsoNavBar extends StatelessWidget {
       HttpsCallable callable =
           FirebaseFunctions.instance.httpsCallable('stopEDT');
       final resp = await callable
-          .call(<String, dynamic>{'instanceName': edtNombre.toLowerCase()});
+          .call(<String, dynamic>{'instanceName': edtNombre.toLowerCase(),
+                                  'edtProjectId': edtProjectId.toLowerCase(),
+                                  'edtZone': edtZone.toLowerCase()});
       debugPrint("result: ${resp.data}");
     } on FirebaseFunctionsException catch (error) {
       debugPrint(error.code);
@@ -134,7 +136,7 @@ class AddToEnUsoNavBar extends StatelessWidget {
     }
   }
 
-  Future<void> startEDT(BuildContext context, String edtNombre) async {
+  Future<void> startEDT(BuildContext context, String edtNombre, String edtProjectId, String edtZone) async {
     try {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
@@ -147,7 +149,9 @@ class AddToEnUsoNavBar extends StatelessWidget {
       HttpsCallable callable =
           FirebaseFunctions.instance.httpsCallable('startEDT');
       final resp = await callable
-          .call(<String, dynamic>{'instanceName': edtNombre.toLowerCase()});
+          .call(<String, dynamic>{'instanceName': edtNombre.toLowerCase(),
+                                  'edtProjectId': edtProjectId.toLowerCase(),
+                                  'edtZone': edtZone.toLowerCase()});
       debugPrint("result: ${resp.data}");
     } on FirebaseFunctionsException catch (error) {
       debugPrint(error.code);
