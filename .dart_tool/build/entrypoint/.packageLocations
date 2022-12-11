@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/build_daemon-3.1.0/lib/fake.dart
 file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/build_runner-2.2.0/lib/fake.dart
+=======
+file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/build_daemon-3.1.0/lib/fake.dart
+file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/build_runner-2.2.0/lib/fake.dart
+>>>>>>> e69da8b389aac24e44ef20538e96036c223a307a
