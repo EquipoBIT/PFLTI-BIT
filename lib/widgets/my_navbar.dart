@@ -116,10 +116,8 @@ class AddToEnUsoNavBar extends StatelessWidget {
     try {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Flexible(
-            child: Text(
+          content: Text(
                 'EDT OFF! Se congela el tiempo de consumo hasta que Ud encienda nuevamente el EDT.'),
-          ),
         ),
       );
       HttpsCallable callable =
@@ -140,10 +138,8 @@ class AddToEnUsoNavBar extends StatelessWidget {
     try {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Flexible(
-            child: Text(
+          content: Text(
                 'EDT ON! Se descuenta tiempo de consumo hasta que Ud lo Detenga o se Agote el saldo.'),
-          ),
         ),
       );
       HttpsCallable callable =

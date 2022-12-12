@@ -174,6 +174,8 @@ exports.saldoTiempoEDT = functions.pubsub
             {edtSaldoTiempo: saldo});
         // si nuevo saldo es 0 entocnes para EDT
         if (saldo == 0) {
+          doc.ref.update(
+              {edtActivo: false});
           await stop2EDT(edtname2, projectId2, zone2);
           console.log(`stop2EDT sin toLowerCase ${doc.data().edtNombre}`);
           doc.ref.update({edtActivo: false});
