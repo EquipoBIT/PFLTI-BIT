@@ -28,7 +28,7 @@ class UsoScreen extends StatelessWidget {
         pageSize: 20,
         query: FirebaseFirestore.instance
             .collection('uso')
-            //.where('usoEdtEstAsigId', isEqualTo: user!.uid)
+            .where('usoEdtEstAsigId', isEqualTo: user!.uid)
             .orderBy('usoOn', descending: true),
         loadingBuilder: (_) => Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,

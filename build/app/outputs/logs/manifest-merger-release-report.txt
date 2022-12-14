@@ -56,7 +56,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ad
 	android:label
 		ADDED from D:\1utec\ProyectoLTI\PFLTI-BIT\android\app\src\main\AndroidManifest.xml:4:9-33
 	android:icon
-		ADDED from D:\1utec\ProyectoLTI\PFLTI-BIT\android\app\src\main\AndroidManifest.xml:6:9-43
+		ADDED from D:\1utec\ProyectoLTI\PFLTI-BIT\android\app\src\main\AndroidManifest.xml:6:9-45
 	android:name
 		INJECTED from D:\1utec\ProyectoLTI\PFLTI-BIT\android\app\src\main\AndroidManifest.xml
 		ADDED from D:\1utec\ProyectoLTI\PFLTI-BIT\android\app\src\main\AndroidManifest.xml:5:9-42

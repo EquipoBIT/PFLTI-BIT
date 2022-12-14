@@ -78,6 +78,10 @@ checked_yaml
 2.12
 file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/checked_yaml-2.0.1/
 file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/checked_yaml-2.0.1/lib/
+cli_util
+2.12
+file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/cli_util-0.3.5/
+file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/cli_util-0.3.5/lib/
 clock
 2.12
 file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/clock-1.1.1/
@@ -210,6 +214,10 @@ flutter_bloc
 2.12
 file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_bloc-8.1.1/
 file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_bloc-8.1.1/lib/
+flutter_launcher_icons
+2.12
+file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_launcher_icons-0.11.0/
+file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_launcher_icons-0.11.0/lib/
 flutter_lints
 2.17
 file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_lints-2.0.1/

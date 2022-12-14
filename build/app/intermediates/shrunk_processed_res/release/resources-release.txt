@@ -3949,6 +3949,7 @@ Marking id:auto:2131034154 used because it matches string pool constant auto
 Marking string:default_web_client_id:2131361811 used because it matches string pool constant default_web_client_id
 Marking string:default_web_client_id:2131361811 used because it matches string pool constant default_web_client_id
 Marking drawable:launch_background:2130968599 used because it matches string pool constant launch
+Marking mipmap:launcher_icon:2131230721 used because it matches string pool constant launch
 Marking attr:queryPatterns:2130771994 used because it matches string pool constant query
 @attr/activityAction : reachable=true
 @attr/activityName : reachable=true
@@ -4243,7 +4244,8 @@ Marking attr:queryPatterns:2130771994 used because it matches string pool consta
     @style/TextAppearance_Compat_Notification_Time
 @layout/notification_template_part_time : reachable=true
     @style/TextAppearance_Compat_Notification_Time
-@mipmap/ic_launcher : reachable=true
+@mipmap/ic_launcher : reachable=false
+@mipmap/launcher_icon : reachable=true
 @raw/keep : reachable=false
 @string/common_google_play_services_enable_button : reachable=true
 @string/common_google_play_services_enable_text : reachable=true
@@ -4409,7 +4411,7 @@ The root reachable resources are:
  layout:notification_template_icon_group:2131165190
  layout:notification_template_part_chronometer:2131165191
  layout:notification_template_part_time:2131165192
- mipmap:ic_launcher:2131230720
+ mipmap:launcher_icon:2131230721
  string:common_google_play_services_enable_button:2131361792
  string:common_google_play_services_enable_text:2131361793
  string:common_google_play_services_enable_title:2131361794
@@ -4483,4 +4485,9 @@ Skipped unused resource res/drawable-xxhdpi-v4/googleg_disabled_color_18.png: 72
 Skipped unused resource res/drawable-xxhdpi-v4/googleg_standard_color_18.png: 1441 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/layout/browser_actions_context_menu_page.xml: 3165 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/layout/browser_actions_context_menu_row.xml: 2211 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/mipmap-mdpi-v4/ic_launcher.png: 405 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/mipmap-hdpi-v4/ic_launcher.png: 507 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/mipmap-xhdpi-v4/ic_launcher.png: 684 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/mipmap-xxhdpi-v4/ic_launcher.png: 994 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/mipmap-xxxhdpi-v4/ic_launcher.png: 1406 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/raw/keep.xml: 290 bytes (replaced with small dummy file of size 9 bytes)

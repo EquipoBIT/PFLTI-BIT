@@ -6,6 +6,7 @@ const admin = require("firebase-admin");
 let saldo = 0;
 let edtEncendida = false;
 let usoMinutos2 = 0;
+let usoMinutosEdt = 0;
 admin.initializeApp();
 
 // Start writing Firebase Functions
@@ -70,7 +71,7 @@ exports.startEDT = functions.https.onCall(async (data, context) => {
               usoEdtUC: doc.data().edtUCurricular,
               usoMinutos: 0,
               usoOn: Timestamp.fromDate(new Date()),
-              usoOff: 0,
+              usoOff: Timestamp.fromDate(new Date()),
             });
           });
         });
@@ -118,6 +119,8 @@ exports.stopEDT = functions.https.onCall(async (data, context) => {
     const usoOff2 = Timestamp.fromDate(new Date());
     usoMinutos2 = Math.floor(
         (usoOff2.toMillis() - doc.data().usoOn.toMillis()) / 1000 / 60);
+    usoMinutosEdt = Math.floor(
+        (usoOff2.toMillis() - doc.data().usoOff.toMillis()) / 1000 / 60);
     // modificar campos usoMinutos y usoOff en uso
     doc.ref.update(
         {usoMinutos: usoMinutos2, usoOff: usoOff2});
@@ -132,7 +135,7 @@ exports.stopEDT = functions.https.onCall(async (data, context) => {
               {
                 edtActivo: false,
                 edtSaldoTiempo: (Math.max(0,
-                    (doc.data().edtSaldoTiempo - usoMinutos2))),
+                    (doc.data().edtSaldoTiempo - usoMinutosEdt))),
               });
         });
       });
@@ -209,9 +212,9 @@ async function minutosConsumidosDesdeEdtOn(doc: any): Promise<number> {
   snapshot2.forEach((doc2) => {
     const usoOff2 = Timestamp.fromDate(new Date());
     usoMinutos2 = Math.floor(
-        (usoOff2.toMillis() - doc2.data().usoOn.toMillis()) / 1000 / 60);
+        (usoOff2.toMillis() - doc2.data().usoOff.toMillis()) / 1000 / 60);
     doc2.ref.update(
-        {usoMinutos: usoMinutos2, usoOff: usoOff2});
+        {usoMinutos: doc2.data().usoMinutos + usoMinutos2, usoOff: usoOff2});
   });
   return usoMinutos2;
 }
